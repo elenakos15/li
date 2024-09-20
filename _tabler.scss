@@ -1,0 +1,86 @@
+@media (max-width: 1024px) {
+    .body {
+    font-size: 20px; /* Уменьшаем размер шрифта для планшетной версии*/
+    padding-left: 0; 
+    padding-right: 0; 
+    padding-top: 30px; /*Уменьшаем отступ сверху*/
+    padding-bottom: 30px; /*Уменьшаем отступ снизу*/
+    }
+.center {
+padding-left: calc(50% - 393px);
+padding-right: calc(50% - 393px);
+}
+
+.product-content {
+max-width: 1201px;
+height: 1056px;
+gap: 32px;
+}
+.prod1 {
+    width:378px;
+    height:473px;
+}
+.prod4 {
+    width:378px;
+    height: 551px;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+        .tablet-only {
+            display: block; /* Показываем текст на планшетах */
+        }
+        .footer {
+        width: 100%;
+        height: auto;
+        background-color: #BDED35;
+        padding-left: 50px;
+       
+            &__title {
+                color:#000;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 29.26px;
+                text-align: center;
+                background-color: #BDED35;
+                padding-left: 578px;
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+
+            &__box {
+                display: flex;
+              justify-content: space-between;
+            }
+        }
+        .product-container {
+            position: relative;
+            display: flex; 
+            gap: 20px; /* Отступ между карточками */
+        }
+
+        .prod1, .prod2 {
+            position: relative;
+        }
+        .game__star {
+            background: rgb(32, 32, 39);
+            padding: 94px 120px 50px 120px;
+                
+        &__star1 {
+            position: absolute;
+            width: 584.72px;
+            height: 584.72px;
+            right: 20px; /* Обратите внимание на правое расстояние */
+            top: -40px; /* Сместите звезду вверх */
+            transform: rotate(-6.77deg);
+            z-index: -1; /* Убедитесь, что звезда под карточками */
+        }
+          
+        .game__star11{
+            width: 31.34px;
+            height: 31.34px;
+            padding-top: 770px;
+            padding-left: 25px;
+
+        }
+    }
+}
+}
