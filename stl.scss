@@ -11,10 +11,10 @@ html, body {
     font-family: 'Montserrat','sans-serif';
   }
   
-    .center {
-      padding-left: calc(50% - 600PX);
-      padding-right: calc(50% - 600px);
-    }
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% -600px);
+}
 
     .header {
       background: url(img/Group\ 1597880565.svg) no-repeat  right top,
@@ -35,8 +35,8 @@ html, body {
   align-items: flex-start;
   max-width: 769px;
   padding-top: 196px;
- 
- }
+}
+  
 .text {
   font-family: Montserrat;
   font-size: 64px;
@@ -57,8 +57,8 @@ html, body {
   max-width: 720px;
   color: #202027;
   padding-bottom: 48px;
-
 }
+
 .buton {
  box-sizing: border-box;
 display: flex;
@@ -78,19 +78,15 @@ font-size: 24px;
 font-weight: 600;
 line-height: 34.01px;
 text-align: center;
-
-/* Inside auto layout */
 flex: none;
-order: 1;
-flex-grow: 0;
-margin-left: 120px;
 margin-bottom: 156px;
 }
 
 .buton:hover {
-    background: #FFFFFF; /* Белый фон при наведении */
-    color: #000000;      /* Черный текст при наведении */
+    background: #FFFFFF; 
+    color: #000000;      
   }
+
   .button-only {
     box-sizing: border-box;
     display: flex;
@@ -101,36 +97,31 @@ margin-bottom: 156px;
     height: 55px;
     border-radius: 60px;
     padding: 16px 28px 16px 28px;
-    border: 1px;
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 600;
     line-height: 22.67px;
     text-align: center;
     padding-bottom: 32px;
-    padding-top: 32px;
-    padding-left: 29px;
     background: #202027;
     color: #efe9e9;
     border: 1px solid #202027;
-}
-  .button-only {
-    display: none;
   }
-  
+
 .product-box {
   width: 100%;
- }
+  background-image: url(img/Star\ 11.svg) no-repeat right top;
+  }
   .product-content {
     background: #000000;
     background-image: url(img/Star\ 11.svg) no-repeat  28px 1570px;
    /*background-color: #eee7e7;*/
-  display: flex;
-  flex-direction: column;
-  row-gap: 56px;
-  flex-wrap: wrap;
-  column-gap: 32px;
-  
+    display: flex;
+    flex-direction: column;
+    row-gap: 56px;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    
 }
 .geim-text {
   width: 788px;
@@ -141,39 +132,51 @@ margin-bottom: 156px;
   padding-right: 474px;
   }
 .product__title {
-  display: none;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 24px;
 }
 .product__text {
-
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
  
 }
 .product-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Распределение пространства */
+  justify-content: space-between; 
   padding-top: 94px;
   padding-bottom: 92px;
-  
   justify-content: space-evenly;
   
 }
 .tablet-only {
-  display: none; /* По умолчанию скрываем текст */
+  display: none; 
 }
 
 .product-container fieldset {
-  margin-bottom: 20px; /* Отступ между рядами */
+  margin-bottom: 20px; 
 }
 
 .prod1 {
-  width: 100%; /* Заменено фиксированной шириной на 100% */
-  /* Максимальная ширина блока */
-  height: auto; /* Автоматическая высота */
+  width: 100%;
+  max-width: 378px; 
+  height: auto; 
   border-radius: 30px;
   border: 1px solid #ffffff;
   box-sizing: border-box;
   background: #ffffff;
-  margin: 0 auto; /* Центрирование блока */
+  margin: 0 auto;
 }
 
 .prod2{
@@ -192,7 +195,8 @@ margin-bottom: 156px;
   }
 
 .prod4 {
- 
+  width: 378px;
+  height: 551px;
   border-radius: 30px;
   border: 1px solid #ffffff;
   box-sizing: border-box;
@@ -201,11 +205,12 @@ margin-bottom: 156px;
 
 .product__img {
   width: 378px;
+  height: 314px;
   border-radius: 30px;
  }
 
 .link1 {
- 
+  width: 378px;
   height: 159px;
   border-radius: 30px;
 }
@@ -213,7 +218,7 @@ margin-bottom: 156px;
   width: 378px;
   height: 198px;
   border-radius: 30px;
-  background: #F7F6F6;
+  
 }
 
 .link4 {
@@ -234,26 +239,31 @@ margin-bottom: 156px;
   padding-left: 32px;
   padding-top: 32px;
   border-radius: 52.58px;
-   height: 36px;
-  padding: 8px 16px;
-  border-radius: 52.58px;
-  background: #F7F7F7;
-  display: flex;
-  align-items: center;
-  justify-content: center; 
+}
+.product__name {
+  font-family: Montserrat;
+  font-size: 17.19px;
+  font-weight: 500;
+  line-height: 18.91px;
+  text-align: center; 
+  color: #202027;
+  padding: 10px 20px; 
+  margin: 0; 
+  background: transparent; 
+  border-radius: 52.58px; 
 }
 
-.product__name {
-display: block; 
+  .product-name {
+    height: 36px;
+    padding: 8px 16px;
+    border-radius: 52.58px;
+    background: #F7F7F7;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
 }
-.product__text {
-  font-family: Montserrat;
-font-size: 32px;
-font-weight: 700;
-line-height: 39.01px;
-text-align: left;
-color: #202027;
-}
+
+
 .product__text1 {
   width: 314px;
   height: 39px;
@@ -264,7 +274,7 @@ color: #202027;
   text-align: left;
   padding-left: 32px;
   padding-right: 32px;
-  padding-bottom: 16px;
+  padding-bottom: 36px;
   color: #202027;
 }
 .product__text2 {
@@ -294,74 +304,70 @@ color: #202027;
   padding-bottom: 36px;
   color: #202027;
 }
+
 .prod1, .prod2 {
   position: relative;
 }
-.game__star1 {
-  position: absolute;
-  width: 584.72px;
-  height: 584.72px;
-  right: 20px; /* Обратите внимание на правое расстояние */
-  top: -40px; /* Сместите звезду вверх */
-  transform: rotate(-6.77deg);
-  z-index: -1; /* Убедитесь, что звезда под карточками */
-}
+
 .footer {
+
   width: 1441px;
   height: 150px;
   top: 5770px;
   background:rgb(189, 237, 53);
 }
-
 .mini-only {
-    width: 250px;
-    height: 49px;
-    font-family: Montserrat;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 48.76px;
-    text-align: left;
-    color: #ffffff;
-  }
-  
-  /* По умолчанию скрываем элемент */
-  .mini-only {
-    display: none;
-  }
-  .product__text1-only {
-    width: 249px;
+  width: 250px;
+  height: 49px;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48.76px;
+  text-align: left;
+  color: #ffffff;
+}
+
+/* По умолчанию скрываем элемент */
+.mini-only {
+  display: none;
+}
+.product__text1-only {
+  width: 249px;
   height: 40px;
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   line-height: 19.5px;
   text-align: left;
-    }
-    .product__text1-only {
-      display: none;
-    }
-    .footer {
-      width: 100%;
-      height: auto;
-      background-color: #BDED35;
-      padding-left: 50px;
-     
-          &__title {
-              color:#000;
-              font-size: 24px;
-              font-weight: 600;
-              line-height: 29.26px;
-              text-align: center;
-              background-color: #BDED35;
-              padding-left: 578px;
-              padding-top: 60px;
-              padding-bottom: 60px;
-          }
-        }
-        .footer {
-          display: none;
-        }
-  
+
+}
+
+@media  (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 188px);
+    padding-right: calc(50% - 188px);
+  }
+  .center {
+       
+      padding-left: 16px;
+       padding-right: 16px;
+    } 
+*{
+    margin: 0;
+    padding: 0;
+  }
+ 
+
+  .body {
+    font-family: 'Montserrat','sans-serif';
+  }
+  .heder {
+    background: url(img/Vector.svg) no-repeat right top,
+                url(mg/Star\ 2.svg) no-repeat 37px 97px,
+                url(img/Star\ 3.svg) no-repeat 21px 64px;
+}
+}
+
 
 @import 'tabler';
 @import 'mobile';
