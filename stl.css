@@ -221,11 +221,7 @@ body {
   background: #ffffff;
 }
 
-.product__img {
-  width: 378px;
-  height: 314px;
-  border-radius: 30px;
-}
+
 
 .link1 {
   width: 378px;
@@ -264,13 +260,13 @@ body {
 }
 
   .product-name {
-  with: 108px;
+   with: 108px;
     height: 36px;
     padding: 8px 16px;
     border-radius: 52.58px; /* Овальная форма */
-  background: #F7F7F7;
-  display: flex;
-  align-items: center; /* Центрирование по вертикали */
+    background: #F7F7F7;
+    display: flex;
+    align-items: center; /* Центрирование по вертикали */
 }
 
 .product__text1 {
@@ -415,4 +411,21 @@ body {
   .product__text1-only {
     display: block;
   }
+.product__img {
+  /* Обложка карточки */
+
+width: 343px;
+height: 284.93px;
+
+background: #565EEF;
+border-radius: 30px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+ 
 }
