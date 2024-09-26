@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @media  (max-width: 767px) {
   .center {
     padding-left: calc(50% - 188px);
@@ -26,6 +26,18 @@
     height: 700px;
     display: block;
 }
+.text {
+  /* Добро пожаловать на мой сайт мини-игр */
+width: 262px;
+height: 196px;
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 49px;
+align-items: center;
+text-align: center;
+color: #202027;
+}
 
 .text {
   font-size: 40px;
@@ -37,12 +49,7 @@
     }
 
 }
-.top-text {
-font-size: 16px;
-font-weight: 400;
-line-height: 19.5px;
-text-align: center;
-}
+
 
 .buton {
   width: 285px;
@@ -61,6 +68,9 @@ text-align: center;
   .product__text {
     display: none;
   }
+  .mini-only {
+    display: block;
+  }
   
   .mini-only {
   font-size: 40px;
@@ -76,13 +86,13 @@ text-align: center;
     display: none;
   }
 
-  .product-container {
+   .product-container {
     width: 343px;
     height: 3545.78px;
     display: flex;
-    flex-direction: column; /* Изменено для вертикального размещения */
-    justify-content: center; /* Центрирование по вертикали */
-    width: 100%; /* Ширина на весь экран */
+    flex-direction: column;
+    justify-content: center; 
+    width: 100%; 
   }
 
  /*.mini {
@@ -128,11 +138,22 @@ text-align: center;
   .main-content  table:not(.product__name) {display: none;}
 }*/
 .product__img {
-  width: 343px;
-  height: 285px;
-  border-radius: 30px;
+/* Обложка карточки */
+
+width: 343px;
+height: 284.93px;
+
+background: #565EEF;
+border-radius: 30px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
  }
- .link2 {
+
+ .link1 {
   width: 343px;
   height: 244px;
   border-radius: 30px;
@@ -156,10 +177,10 @@ padding-top: 29px;
 }
 .link2 {
   width: 343pxpx;
-height: 282.7px;
-padding: 29.04px 29.04px 32.67px 29.04px;
-gap: 9.07px;
-border-radius: 27.22px 0px 0px 0px;
+  height: 282.7px;
+  padding: 29.04px 29.04px 32.67px 29.04px;
+  gap: 9.07px;
+  border-radius: 27.22px 0px 0px 0px;
 }
 .product__text2 {
   width: 284.93px;
@@ -195,48 +216,17 @@ border-radius: 27.22px 0px 0px 0px;
   text-align: center;
   
 }
-=======
 @media  (max-width: 767px) {
-  .center {
-    padding-left: calc(50% - 188px);
-    padding-right: calc(50% - 188px);
-  }
-  .center {
-       
-      padding-left: 16px;
-       padding-right: 16px;
-    } 
-*{
-    margin: 0;
-    padding: 0;
-  }
- 
-
-  .body {
-    font-family: 'Montserrat','sans-serif';
-  }
   
-  .product-container {
-    width: 343px;
-    height: 3545.78px;
-    display: flex;
-    flex-direction: column; /* Изменено для вертикального размещения */
-    justify-content: center; /* Центрирование по вертикали */
-    width: 100%; /* Ширина на весь экран */
-  }
-
- .mini {
-    width: 39px;
-    height: 41px;
-    top: 580px;
-    left: 304px;
-    border: 1px 0px 0px 0px;
-    padding-bottom: 48px;
-    padding-top: 48px;
-    padding-left: 16px;
-    padding-right: 16px;
+  .mini-only {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48.76px;
+  text-align: left;
+  color: #000;
+  display: block;
 }
-
+ 
 .text {
     width: 262px;
     height: 196px;
@@ -281,9 +271,9 @@ border-radius: 27.22px 0px 0px 0px;
   height: 285px;
   border-radius: 30px;
  }
- .link2 {
-  width: 343px;
-  height: 244px;
+ .link4 {
+
+  height: 341px;
   border-radius: 30px;
   background: #F7F6F6;
 }
@@ -303,12 +293,12 @@ padding-top: 29px;
 .product__text1-only {
   display: block; /* Отображаем текст для мобильной версии */
 }
-.link2 {
+.link3 {
   width: 343pxpx;
-height: 282.7px;
-padding: 29.04px 29.04px 32.67px 29.04px;
-gap: 9.07px;
-border-radius: 27.22px 0px 0px 0px;
+  height: 321px;
+  padding: 29.04px 29.04px 32.67px 29.04px;
+  gap: 9.07px;
+  border-radius: 27.22px 0px 0px 0px;
 }
 .product__text2 {
   width: 284.93px;
@@ -333,16 +323,56 @@ border-radius: 27.22px 0px 0px 0px;
 
 }
 .footer__title {
-  width: 190px;
-  height: 20px;
-  top: 4480px;
-  left: 93px;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 19.5px;
+   line-height: 19.5px;
   text-align: center;
   
+  /* Все права защищены. */
+
+position: absolute;
+width: 190px;
+height: 20px;
+left: calc(50% - 190px/2 + 0.5px);
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+align-items: center;
+text-align: center;
+color: #000000;
 }
+.product__text1-only {
+  width: 285px;
+height: 60px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+color: #000000;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+padding-left:29px;
 }
->>>>>>> ecf55f7373ba9b141fe45977e9215d75699f533e
+.product__text1-only {
+  display: block;
+  padding-left:29px;
+  padding-bottom: 32px ;
+}
+.top-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: center;
+  }
+}
+
