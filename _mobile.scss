@@ -4,18 +4,12 @@
     padding-left: calc(50% - 188px);
     padding-right: calc(50% - 188px);
   }
-  /*.center {
-       
-      padding-left: 16px;
-       padding-right: 16px;
-    } */
+  
 *{
     margin: 0;
     padding: 0;
   }
- 
-
-  .body {
+   .body {
     font-family: 'Montserrat','sans-serif';
   }
   .header {
@@ -23,8 +17,12 @@
     url(mg/Star\ 2.svg) no-repeat 37px 97px,
     url(img/Star\ 3.svg) no-repeat 21px 64px;
     width: 376px;
-    height: 700px;
+    height: 800px;
     display: block;
+}
+.head__text {
+  padding-top: 147px;
+  padding-left: 17px;
 }
 .text {
   /* Добро пожаловать на мой сайт мини-игр */
@@ -48,144 +46,19 @@ color: #202027;
   height: 196px;
     }
 
-}
-
-
-.buton {
-  width: 285px;
-  height: 55px;
-  border-radius: 60px;
-  border: 1px;
-  padding-left: 46px;
-  padding-top: 36px;
-  padding-bottom: 182px;
-}
-  
-  .product__title {
+ .product__title {
     display: none;
   }
 
   .product__text {
     display: none;
   }
-  .mini-only {
-    display: block;
-  }
-  
-  .mini-only {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 48.76px;
-  text-align: left;
-  color: #FFFFFF;
-  padding-left: 16px;
-  padding-top: 48px;
-  padding-top: 48px;
-  }
-  .product__name {
-    display: none;
-  }
-
+ 
    .product-container {
     width: 343px;
-    height: 3545.78px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
     width: 100%; 
+    display: none;
   }
-
- /*.mini {
-    width: 39px;
-    height: 41px;
-    top: 580px;
-    left: 304px;
-    border: 1px 0px 0px 0px;
-    padding-bottom: 48px;
-    padding-top: 48px;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-*/
-
-.button-only {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 285px;
-    height: 55px;
-    border-radius: 60px;
-    padding: 16px 28px 16px 28px;
-    border: 1px;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 22.67px;
-    text-align: center;
-    padding-bottom: 32px;
-    padding-top: 32px;
-    padding-left: 29px;
-    background: #202027;
-    color: #efe9e9;
-    border: 1px solid #202027;
-}
-.button-only {
-  display: block;
-}
-/*@media screen and (max-width: 767px){
-  .main-content  table:not(.product__name) {display: none;}
-}*/
-.product__img {
-/* Обложка карточки */
-
-width: 343px;
-height: 284.93px;
-
-background: #565EEF;
-border-radius: 30px;
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
- }
-
- .link1 {
-  width: 343px;
-  height: 244px;
-  border-radius: 30px;
-  background: #F7F6F6;
-}
-.product__text1 {
-  width: 284.93px;
-  height: 39px;
-  font-family: Montserrat;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 39.01px;
-  text-align: left;
-padding-top: 29px;
-}
-.product__name {
-  display: none;
-}
-.product__text1-only {
-  display: block; /* Отображаем текст для мобильной версии */
-}
-.link2 {
-  width: 343pxpx;
-  height: 282.7px;
-  padding: 29.04px 29.04px 32.67px 29.04px;
-  gap: 9.07px;
-  border-radius: 27.22px 0px 0px 0px;
-}
-.product__text2 {
-  width: 284.93px;
-  height: 78px;
-}
 
 .head__text {
   width: 262px;
@@ -195,6 +68,8 @@ padding-top: 29px;
   font-weight: 700;
   line-height: 48.76px;
   text-align: center;
+  padding-top: 147px;
+  padding-left: 17px;
 }
 .footer {
   width: 375px;
@@ -204,30 +79,9 @@ padding-top: 29px;
   padding-left: 50px;
 
 }
-.footer__title {
-  width: 190px;
-  height: 20px;
-  top: 4480px;
-  left: 93px;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 19.5px;
-  text-align: center;
-  
-}
+
 @media  (max-width: 767px) {
-  
-  .mini-only {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 48.76px;
-  text-align: left;
-  color: #000;
-  display: block;
-}
- 
-.text {
+  .text {
     width: 262px;
     height: 196px;
     font-family: Montserrat;
@@ -235,74 +89,6 @@ padding-top: 29px;
     font-weight: 700;
     line-height: 48.76px;
     text-align: center;
-}
-
-.button-only {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 285px;
-    height: 55px;
-    border-radius: 60px;
-    padding: 16px 28px 16px 28px;
-    border: 1px;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 22.67px;
-    text-align: center;
-    padding-bottom: 32px;
-    padding-top: 32px;
-    padding-left: 29px;
-    background: #202027;
-    color: #efe9e9;
-    border: 1px solid #202027;
-}
-.button-only {
-  display: block;
-}
-/*@media screen and (max-width: 767px){
-  .main-content  table:not(.product__name) {display: none;}
-}*/
-.product__img {
-  width: 343px;
-  height: 285px;
-  border-radius: 30px;
- }
- .link4 {
-
-  height: 341px;
-  border-radius: 30px;
-  background: #F7F6F6;
-}
-.product__text1 {
-  width: 284.93px;
-  height: 39px;
-  font-family: Montserrat;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 39.01px;
-  text-align: left;
-padding-top: 29px;
-}
-.product__name {
-  display: none;
-}
-.product__text1-only {
-  display: block; /* Отображаем текст для мобильной версии */
-}
-.link3 {
-  width: 343pxpx;
-  height: 321px;
-  padding: 29.04px 29.04px 32.67px 29.04px;
-  gap: 9.07px;
-  border-radius: 27.22px 0px 0px 0px;
-}
-.product__text2 {
-  width: 284.93px;
-  height: 78px;
 }
 
 .head__text {
@@ -325,26 +111,20 @@ padding-top: 29px;
 .footer__title {
    line-height: 19.5px;
   text-align: center;
-  
   /* Все права защищены. */
-
-position: absolute;
-width: 190px;
-height: 20px;
-left: calc(50% - 190px/2 + 0.5px);
-
-
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height */
-
-align-items: center;
-text-align: center;
-color: #000000;
+  position: absolute;
+  width: 190px;
+  height: 20px;
+  left: calc(50% - 190px/2 + 0.5px);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  color: #000000;
 }
+
 .product__text1-only {
   width: 285px;
 height: 60px;
@@ -375,4 +155,6 @@ padding-left:29px;
   text-align: center;
   }
 }
+}
+
 
