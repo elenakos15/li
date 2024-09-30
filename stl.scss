@@ -213,7 +213,7 @@ body {
 
 product__name {
   border-radius: 52.58px;
-  background: rgb(247, 247, 247);
+  background: rgb(82, 65, 65);
   padding: 8px 16px 10px 16px;
   font-size: 16px;
   font-weight: 500;
@@ -225,7 +225,8 @@ product__name {
 .product-name {
   height: 36px;
   padding: 8px 16px;
-  background: #f7f7f7;
+  background: #F7F7F7;
+
   display: flex; /* Включаем флекс для центрирования */
   align-items: center; /* Центрирование по вертикали */
   justify-content: center; /* Центрирование по горизонтали */
@@ -271,7 +272,7 @@ product__name {
   height: 36px;
   padding: 8px 16px;
   border-radius: 52.58px;
-  background: #f7f7f7;
+  background: #7a5353;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -296,7 +297,7 @@ product__name {
   justify-content: space-between;
   width: 1200px;
   height: 500px;
-  border-radius: 30px;
+  border-radius: 60px;
   row-gap: 24px;
  }
 
@@ -338,16 +339,15 @@ product__name {
   line-height: 58.51px;
   text-align: left;
   width: 504px;
- 
-    }
+     }
   .content {
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
   text-align: left;
-  width: 457px;
+  width: 497px;
   height: 64px;
-   }
+    }
 
   .button {
   box-sizing: border-box;
