@@ -6,8 +6,8 @@
 
 html,
 body {
-  height: 100%;
-  background: rgb(32, 32, 39);
+  height: 1470px;
+  
 }
 
 body {
@@ -20,7 +20,12 @@ body {
 }
 
 .header {
-  background: url(img/Group\ 1597880565.svg) no-repeat right top, url(img/Star\ 2.svg) no-repeat 63px 94px, url(img/Star\ 3.svg) no-repeat 156px 59px, url(img/Star\ 4.svg) no-repeat 1013px 568px, url(img/Star\ 5.svg) no-repeat 948px 538px;
+  background: url(img/Group\ 1597880565.svg) no-repeat right top, 
+  url(img/Star\ 2.svg) no-repeat 63px 94px, 
+  url(img/Star\ 3.svg) no-repeat 156px 59px, 
+  url(img/Star\ 4.svg) no-repeat 1013px 568px, 
+  url(img/Star\ 5.svg) no-repeat 948px 538px;
+  height: 800px;
 }
 
 .top-header {
@@ -114,10 +119,16 @@ body {
 .button-only {
   display: none;
 }
+.main {
+  background: rgb(32, 32, 39);
+}
 
 .product-box {
   width: 100%;
-  background: url(img/Star\ 1.svg) no-repeat right top, url(img/Star\ 11.svg) no-repeat 28px 770px, url(img/Star\ 12.svg) no-repeat 40px 822px;
+  background: url(img/Star\ 1.svg) no-repeat right top, 
+  url(img/Star\ 11.svg) no-repeat 28px 770px, 
+  url(img/Star\ 12.svg) no-repeat 40px 822px;
+  
 }
 
 .product-content {
@@ -126,7 +137,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   -moz-column-gap: 32px;
-       column-gap: 32px;
+   column-gap: 32px;
 }
 
 .geim-text {
@@ -249,7 +260,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 150px;
-  margin-top: 144px;
   background: #BDED35;
   width: 100%;
   height: 100px;
@@ -424,6 +434,7 @@ product-container {
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 32px;
+  margin-bottom: 144px;
 }
 
 @media (max-width: 1024px) {
@@ -443,7 +454,9 @@ product-container {
     padding: 0;
   }
   .main {
-    height: 100vh;
+    height: 100%;
+    background: rgb(32, 32, 39);
+  
   }
   .product-box {
     width: 100%;
@@ -465,7 +478,7 @@ product-container {
 }
 
 .product__img {
-  max-width: 100%; /* Адаптация изображений под размеры контейнера */
+  width: 100%; /* Адаптация изображений под размеры контейнера */
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -610,10 +623,9 @@ product-container {
       justify-content: center;
       align-items: center;
       height: 150px;
-      margin-top: 144px;
       background: rgb(189, 237, 53);
 }
-  }
+  
   .footer__title {
     line-height: 19.5px;
     text-align: center;
@@ -661,4 +673,10 @@ product-container {
   .product__subtitle {
     display: none;
   }
+  .prod__title {
+    display: none;
+}
+.games {
+  display: none;
+}
 }

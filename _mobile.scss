@@ -109,6 +109,7 @@ color: #202027;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1470px;
 }
 
 .footer__title {
@@ -135,7 +136,13 @@ color: #202027;
   line-height: 19.5px;
   text-align: center;
   }
+  .prod__title {
+    display: none;
+}
+.games {
+  display: none;
 }
 }
 
 
+}
