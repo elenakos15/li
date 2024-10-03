@@ -199,25 +199,8 @@ gap: 32px;
         .game__star {
             background: rgb(32, 32, 39);
             padding: 94px 120px 50px 120px;
-                
-        &__star1 {
-            position: absolute;
-            width: 584.72px;
-            height: 584.72px;
-            right: 20px; /* Обратите внимание на правое расстояние */
-            top: -40px; /* Сместите звезду вверх */
-            transform: rotate(-6.77deg);
-            z-index: -1; /* Убедитесь, что звезда под карточками */
-        }
-          
-        .game__star11{
-            width: 31.34px;
-            height: 31.34px;
-            padding-top: 770px;
-            padding-left: 25px;
-
-        }
-    }
+             
+           }
 }
 }
 

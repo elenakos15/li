@@ -161,6 +161,8 @@ body {
 }
 
 .product-container {
+
+  height: 1326px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -196,7 +198,8 @@ text-align: center;
   }
 }
 .product-container fieldset {
-  margin-bottom: 20px;
+  margin-bottom: 120px;
+  
 }
 
 .prod1 {
@@ -278,6 +281,7 @@ text-align: center;
   padding-left: 32px;
   padding-top: 32px;
   padding-bottom: 16px;
+  background: #F7F7F7;
 }
 
   .product-name {
@@ -530,7 +534,14 @@ line-height: 20px;
 align-items: center;
 text-align: center;
 color: #202027;
-
-
+  }
+  .prod1 {
+    display: none;
+  }
+  .prod2 {
+    display: none;
+  }
+  .prod4 {
+    display: none;
   }
 }
