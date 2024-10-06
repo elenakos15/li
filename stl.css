@@ -31,7 +31,9 @@ body {
   flex-direction: column;
   align-items: flex-start;
   max-width: 769px;
-  padding-top: 196px;
+  padding-top: 147px;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .text {
@@ -161,8 +163,7 @@ body {
 }
 
 .product-container {
-
-  height: 1326px;
+  height: 1826px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -183,7 +184,38 @@ line-height: 29.26px;
 text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+
+  .header {
+    background: url(img/Vector.svg) no-repeat right top,
+    url(mg/Star\ 2.svg) no-repeat 37px 97px,
+    url(img/Star\ 3.svg) no-repeat 21px 64px,
+    url(img/Star\ 5.svg) no-repeat calc(100% - 55px) 538px,
+    url(img/Star\ 4.svg) no-repeat calc(100% - 44px) 568px;
+
+    max-width: 1024px;
+    display: block;
+.text {
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 58.02px;
+  text-align: left; 
+  width: 500px;
+ }
+ .top__text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  width: 500px;
+  color: #202027;
+  padding-bottom: 48px;
+}
+
+}
+@media (max-width: 767px) {
   .desktop-only {
     display: none; /* Скрываем на мобильных */
   }
@@ -199,8 +231,7 @@ text-align: center;
 }
 .product-container fieldset {
   margin-bottom: 120px;
-  
-}
+ }
 
 .prod1 {
   width: 100%;
@@ -371,21 +402,7 @@ color: #000000;
 padding-top: 61px;
 }
 
-.mini-only {
-  width: 250px;
-  height: 49px;
-  font-family: Montserrat;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 48.76px;
-  text-align: left;
-  color: #ffffff;
-}
 
-/* По умолчанию скрываем элемент */
-.mini-only {
-  display: none;
-}
 
 .product__text-only {
   width: 249px;
@@ -420,7 +437,10 @@ padding-top: 61px;
   .header {
     background: url(img/Vector.svg) no-repeat right top, 
     url(mg/Star\ 2.svg) no-repeat 37px 97px, 
-    url(img/Star\ 3.svg) no-repeat 21px 64px;
+    url(img/Star\ 3.svg) no-repeat 21px 64px,
+    url(img/Star\ 5.svg) no-repeat 455px 557px,
+    url(img/Star\ 4.svg) no-repeat  344px 580px;
+
     display: block;
   }
   .product__text {
@@ -457,6 +477,11 @@ padding-top: 61px;
     padding-bottom:48px;
     padding-left: 16px;
   }
+
+  /* По умолчанию скрываем элемент */
+.mini-only {
+  display: none;
+}
   .button-only {
     display: block;
     padding-left: 29px;
@@ -502,10 +527,7 @@ padding-bottom: 32px;
 
   .text {
     /* Добро пожаловать на мой сайт мини-игр */
-  
-  width: 262px;
-  height: 196px;
-  
+    width: 262px;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -514,18 +536,12 @@ padding-bottom: 32px;
   align-items: center;
   text-align: center;
   color: #202027;
-  
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  }
+  padding-bottom: 24px;
+   }
   .top__text {
     /* Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай «Поехали!» и приступай. */
-
 width: 296px;
 height: 60px;
-
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;

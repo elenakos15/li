@@ -4,20 +4,11 @@
     padding-left: calc(50% - 188px);
     padding-right: calc(50% - 188px);
   }
-  /*.center {
-
-      padding-left: 16px;
-       padding-right: 16px;
-    } */
-  * {
-    margin: 0;
-    padding: 0;
-  }
   .body {
     font-family: "Montserrat", "sans-serif";
   }
   .header {
-    background: url(img/Vector.svg) no-repeat right top, url(mg/Star\ 2.svg) no-repeat 37px 97px, url(img/Star\ 3.svg) no-repeat 21px 64px;
+    background: url(img/Vector.svg) no-repeat right top, url(mg/Star\ 2.svg) no-repeat 37px 97px, url(img/Star\ 3.svg) no-repeat 21px 64px, url(img/Star\ 5.svg) no-repeat calc(100% - 455px) 538px, url(img/Star\ 4.svg) no-repeat calc(100% - 344px) 568px;
     width: 376px;
     height: 700px;
     display: block;
@@ -33,14 +24,7 @@
     align-items: center;
     text-align: center;
     color: #202027;
-  }
-  .text {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 48.76px;
-    text-align: center;
-    width: 262px;
-    height: 196px;
+    padding-top: 147px;
   }
 }
 .buton {
@@ -82,7 +66,7 @@
 
 .product-container {
   width: 343px;
-  height: 3545.78px;
+  height: 1326px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,7 +116,7 @@
 
 .link1 {
   width: 343px;
-  height: 244px;
+  height: 237px;
   border-radius: 30px;
   background: #F7F6F6;
 }
@@ -166,6 +150,12 @@
   font-weight: 700;
   line-height: 48.76px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 147px;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .footer {
@@ -184,15 +174,6 @@
     text-align: left;
     color: #000;
     display: block;
-  }
-  .text {
-    width: 262px;
-    height: 196px;
-    font-family: Montserrat;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 48.76px;
-    text-align: center;
   }
   .button-only {
     box-sizing: border-box;
@@ -307,5 +288,13 @@
   }
   .prod1 {
     display: none;
+  }
+  .text {
+    width: 262px;
+    height: 196px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.76px;
+    text-align: center;
   }
 }/*# sourceMappingURL=_mobile.css.map */
