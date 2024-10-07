@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background: rgb(32, 32, 39);
+}
+
+body {
+  font-family: "Montserrat", "sans-serif";
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.header {
+  background: url(img/Group\ 1597880565.svg) no-repeat right top,
+    url(img/Star\ 2.svg) no-repeat 63px 94px, url(img/Star\ 3.svg) no-repeat 156px 59px,
+    url(img/Star\ 4.svg) no-repeat 1013px 568px, url(img/Star\ 5.svg) no-repeat 948px 538px;
+}
+.top-header {
+  height: 800px;
+  background: rgba(225, 255, 143, 1);
+}
+
+.head__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 769px;
+  padding-top: 196px;
+}
+
+.text {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78.02px;
+  text-align: left;
+  max-width: 769px;
+  height: 156px;
+  color: #202027;
+  padding-bottom: 24px;
+  padding-top: 94px;
+
+  /* Добро пожаловать на мой сайт мини-игр */
+  font-style: normal;
+  display: flex;
+  align-items: center;
+}
+
+.top__text {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  max-width: 720px;
+  color: #202027;
+  padding-bottom: 48px;
+}
+
+.buton {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 28px;
+  gap: 10px;
+  width: 247px;
+  height: 66px;
+  background: #202027;
+  color: #efe9e9;
+  border: 1px solid #202027;
+  border-radius: 60px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34.01px;
+  text-align: center;
+  flex: none;
+}
+
+.buton:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.button-only {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 285px;
+  height: 55px;
+  border-radius: 60px;
+  padding: 16px 28px 16px 28px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22.67px;
+  text-align: center;
+  padding-bottom: 32px;
+  background: #202027;
+  color: #efe9e9;
+  border: 1px solid #202027;
+}
+.button-only {
+  display: none;
+}
+.product-box {
+  width: 100%;
+  background: url(img/Star\ 1.svg) no-repeat right top,
+  url(img/Star\ 11.svg) no-repeat 28px 770px,
+  url(img/Star\ 12.svg) no-repeat 40px 822px,
+ }
+.product-content {
+  padding-top: 94px;
+   
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 32px;
+}
+.geim-text {
+  width: 788px;
+  height: 96px;
+  padding-top: 94px;
+  padding-bottom: 72px;
+  padding-left: 119px;
+  padding-right: 474px;
+}
+.product__title {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  }
+
+.product__subtitle {
+  padding-top: 24px;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.product-container {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding-top: 72px;
+
+  .card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px 32px 36px 32px;
+  }
+}
+
+.prod {
+  width: 378px;
+  border-radius: 30px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+.prod_small {
+  height: 473px;
+}
+
+.prod_medium {
+  height: 512px;
+}
+
+.prod_big {
+  height: 551px;
+}
+
+.prod__cart {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 363px;
+  left: 259px;
+}
+
+.prod4 {
+  width: 378px;
+  height: 551px;
+  border-radius: 30px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+product__name {
+  border-radius: 52.58px;
+  background: rgb(82, 65, 65);
+  padding: 8px 16px 10px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  width: 76px;
+  height: 18px;
+}
+
+.product-name {
+  height: 36px;
+  padding: 8px 16px;
+  background: #F7F7F7;
+
+  display: flex; /* Включаем флекс для центрирования */
+  align-items: center; /* Центрирование по вертикали */
+  justify-content: center; /* Центрирование по горизонтали */
+}
+
+.product__text {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  color: #202027;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  margin-top: 144px;
+  background: rgb(189, 237, 53);
+}
+.mini-only {
+  width: 250px;
+  height: 49px;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48.76px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.product__text1-only {
+  width: 249px;
+  height: 40px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+}
+
+.product-name {
+  height: 36px;
+  padding: 8px 16px;
+  border-radius: 52.58px;
+  background: #7a5353;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__mobile {
+    display: none;
+  }
+}
+
+.footer__title {
+  color: rgb(0, 0, 0);
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+
+  text-align: center;
+}
+.games-big {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1200px;
+  height: 500px;
+  border-radius: 60px;
+  row-gap: 24px;
+ }
+
+.prod__img {
+  width: 600px;
+  height: 500px;
+  border-radius: 30px;
+  }
+  .prod-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 24px;
+    width: 504px;
+    height: 250px;
+    border-radius: 30px;
+    padding-bottom: 203px;
+    padding-left: 48px;
+    padding-top: 48px;
+    justify-content: space-between;
+}
+.prod-info__big {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 24px;
+  width: 504px;
+  height: 367px;
+  border-radius: 30px;
+  padding-bottom: 85px;
+  padding-left: 48px;
+  padding-top: 48px;
+  justify-content: space-between;
+
+}
+  .name__text {
+   font-size: 48px;
+  font-weight: 700;
+  line-height: 58.51px;
+  text-align: left;
+  width: 504px;
+     }
+  .content {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  width: 497px;
+  height: 64px;
+    }
+
+  .button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 28px;
+  gap: 10px;
+  width: 247px;
+  height: 66px;
+  background: #202027;
+  color: #efe9e9;
+  border: 1px solid #202027;
+  border-radius: 60px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34.01px;
+  text-align: center;
+  flex: none;
+     }
+
+   .prod__title {
+    width: 400px;
+    height:78px;
+    gap: 72px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78.02px;
+    text-align: left;
+     padding-bottom: 72px;
+     padding-left: 119px;
+     padding-top: 96px;
+     color: #FFFFFF;
+    }
+    .prod-info__medium {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      row-gap: 24px;
+      width: 504px;
+      height: 308px;
+      border-radius: 30px;
+      padding-bottom: 144px;
+      padding-left: 48px;
+      padding-top: 48px;
+      justify-content: space-between; 
+    }
+.games {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 32px;
+}
+ @import "tabler";
+@import "mobile";
+ 
