@@ -11,14 +11,23 @@
   .body {
     font-family: "Montserrat", "sans-serif";
   }
+  .prod__title {
+    display: none;
+  }
+  .games {
+    display: none;
+  }
+  .main {
+    height: 100vh;
+    background: rgb(32, 32, 39);
+  }
   .header {
-    background: url(img/Vector.svg) no-repeat right top, url(mg/Star\ 2.svg) no-repeat 37px 97px, url(img/Star\ 3.svg) no-repeat 21px 64px;
+    background: url(img/Vector.svg) no-repeat right top, url(mg/Star\ 2.svg) no-repeat 37px 97px, url(img/Star\ 3.svg) no-repeat 21px 64px, url(img/Star\ 5.svg) no-repeat 455px 557px, url(img/Star\ 4.svg) no-repeat 344px 580px;
     height: 800px;
     display: flex;
     justify-content: center;
   }
   .head__text {
-    padding-top: 147px;
     padding-left: 17px;
   }
   .text {
@@ -60,7 +69,6 @@
     font-weight: 700;
     line-height: 48.76px;
     text-align: center;
-    padding-top: 147px;
     padding-left: 17px;
   }
   .footer {
@@ -75,7 +83,6 @@
   .text {
     width: 262px;
     height: 196px;
-    font-family: Montserrat;
     font-size: 40px;
     font-weight: 700;
     line-height: 48.76px;
@@ -84,7 +91,6 @@
   .head__text {
     width: 262px;
     height: 196px;
-    font-family: Montserrat;
     font-size: 40px;
     font-weight: 700;
     line-height: 48.76px;
@@ -126,6 +132,12 @@
     display: none;
   }
   .games {
+    display: none;
+  }
+  .prod__title {
+    display: none;
+  }
+  .product-content {
     display: none;
   }
 }/*# sourceMappingURL=_mobile.css.map */

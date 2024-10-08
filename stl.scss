@@ -2,13 +2,6 @@
   margin: 0;
   padding: 0;
 }
-
-html,
-body {
-  height: 100%;
-  background: rgb(32, 32, 39);
-}
-
 body {
   font-family: "Montserrat", "sans-serif";
 }
@@ -21,7 +14,9 @@ body {
 .header {
   background: url(img/Group\ 1597880565.svg) no-repeat right top,
     url(img/Star\ 2.svg) no-repeat 63px 94px, url(img/Star\ 3.svg) no-repeat 156px 59px,
-    url(img/Star\ 4.svg) no-repeat 1013px 568px, url(img/Star\ 5.svg) no-repeat 948px 538px;
+    url(img/Star\ 4.svg) no-repeat 1013px 568px, 
+    url(img/Star\ 5.svg) no-repeat 948px 538px;
+    height: 800px;
 }
 .top-header {
   height: 800px;
@@ -33,7 +28,6 @@ body {
   flex-direction: column;
   align-items: flex-start;
   max-width: 769px;
-  padding-top: 196px;
 }
 
 .text {
@@ -122,12 +116,17 @@ body {
  }
 .product-content {
   padding-top: 94px;
-   
-  display: flex;
+   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   column-gap: 32px;
+  
 }
+.main {
+  height: 4900px;
+  background: rgb(32, 32, 39);
+}
+
 .geim-text {
   width: 788px;
   height: 96px;
@@ -154,11 +153,13 @@ body {
   line-height: 32px;
 }
 
-.product-container {
-  display: flex;
-  gap: 32px;
-  flex-wrap: wrap;
-  padding-top: 72px;
+  .product-container {
+    display: flex;
+    gap: 32px;
+    flex-wrap: nowrap;
+    padding-top: 72px;
+    flex-direction: row;
+}
 
   .card-wrapper {
     display: flex;
@@ -172,7 +173,7 @@ body {
     gap: 16px;
     padding: 32px 32px 36px 32px;
   }
-}
+
 
 .prod {
   width: 378px;
@@ -211,9 +212,9 @@ body {
   background: #ffffff;
 }
 
-product__name {
+.product__name {
   border-radius: 52.58px;
-  background: rgb(82, 65, 65);
+  background: #F7F7F7;
   padding: 8px 16px 10px 16px;
   font-size: 16px;
   font-weight: 500;
@@ -227,7 +228,7 @@ product__name {
   padding: 8px 16px;
   background: #F7F7F7;
 
-  display: flex; /* Включаем флекс для центрирования */
+  display: flex;
   align-items: center; /* Центрирование по вертикали */
   justify-content: center; /* Центрирование по горизонтали */
 }
@@ -244,18 +245,7 @@ product__name {
   justify-content: center;
   align-items: center;
   height: 150px;
-  margin-top: 144px;
   background: rgb(189, 237, 53);
-}
-.mini-only {
-  width: 250px;
-  height: 49px;
-  font-family: Montserrat;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 48.76px;
-  text-align: left;
-  color: #ffffff;
 }
 
 .product__text1-only {

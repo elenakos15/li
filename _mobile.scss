@@ -12,17 +12,28 @@
    .body {
     font-family: 'Montserrat','sans-serif';
   }
+  .prod__title {
+    display: none;
+  }
+  .games {
+    display: none;
+}
+.main {
+  height: 100vh;
+  background: rgb(32, 32, 39); 
+}
   .header {
     background: url(img/Vector.svg) no-repeat right top,
     url(mg/Star\ 2.svg) no-repeat 37px 97px,
-    url(img/Star\ 3.svg) no-repeat 21px 64px;
+    url(img/Star\ 3.svg) no-repeat 21px 64px,
+    url(img/Star\ 5.svg) no-repeat 455px 557px,
+    url(img/Star\ 4.svg) no-repeat 344px 580px;
     height: 800px;
     display: flex;
     justify-content: center;
 }
 .head__text {
-  padding-top: 147px;
-  padding-left: 17px;
+ padding-left: 17px;
 }
 .text {
   /* Добро пожаловать на мой сайт мини-игр */
@@ -68,7 +79,6 @@ color: #202027;
   font-weight: 700;
   line-height: 48.76px;
   text-align: center;
-  padding-top: 147px;
   padding-left: 17px;
 }
 .footer {
@@ -84,7 +94,6 @@ color: #202027;
   .text {
     width: 262px;
     height: 196px;
-    font-family: Montserrat;
     font-size: 40px;
     font-weight: 700;
     line-height: 48.76px;
@@ -94,7 +103,6 @@ color: #202027;
 .head__text {
   width: 262px;
   height: 196px;
-  font-family: Montserrat;
   font-size: 40px;
   font-weight: 700;
   line-height: 48.76px;
@@ -109,8 +117,7 @@ color: #202027;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1470px;
-}
+  }
 
 .footer__title {
   line-height: 19.5px;
@@ -140,6 +147,12 @@ color: #202027;
     display: none;
 }
 .games {
+  display: none;
+}
+.prod__title {
+  display: none;
+}
+.product-content {
   display: none;
 }
 }
