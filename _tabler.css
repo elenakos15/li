@@ -169,11 +169,12 @@
     padding-top: 94px;
   }
   .product-container {
-    height: 1526px;
+    width: 343px;
+    height: 1326px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
   }
 }
 @media (max-width: 1024px) and (max-width: 1024px) and (min-width: 768px) and (max-width: 1024px) {

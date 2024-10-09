@@ -7,11 +7,54 @@
 html, body {
   height: 100%;
 }
-
+.product__name {
+  width: 108px;
+  height: 36px;
+  padding: 8px 16px 10px 16px;
+  border-radius: 52.58px;
+  opacity: 0px;
+  font-size: 17.19px;
+  font-weight: 500;
+  line-height: 18.91px;
+  text-align: center;
+  color: #202027;
+  padding: 10px 20px;
+  margin: 0;
+  background: transparent;
+  border-radius: 52.58px; /* Овальная форма для текста */
+  padding-left: 32px;
+  padding-top: 32px;
+  padding-bottom: 16px;
+  background: #F7F7F7;
+}
 body {
   font-family: "Montserrat", "sans-serif";
 }
-
+.link2 {
+  width: 378px;
+  height: 198px;
+  border-radius: 30px;
+}
+.footer {
+  width: 100%;
+  height: 150px;
+ margin-top: 300px;
+  background: rgb(189, 237, 53);
+ 
+}
+.product__text4 {
+  width: 314px;
+  height: 117px;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39.01px;
+  text-align: left;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 36px;
+  color: #202027;
+}
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
@@ -86,6 +129,9 @@ body {
   background: #FFFFFF;
   color: #000000;
 }
+.main {
+  height: 14400;
+}
 
 .button-only {
   box-sizing: border-box;
@@ -107,10 +153,11 @@ body {
   color: #efe9e9;
   border: 1px solid #202027;
 }
-
 .product-box {
   width: 100%;
   background-image: url(img/Star\ 11.svg) no-repeat right top;
+  height: 1470px;
+  background: black;
 }
 
 .product-content {
@@ -163,8 +210,7 @@ body {
 }
 
 .product-container {
-  height: 1826px;
-  display: flex;
+   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 92px;
@@ -175,8 +221,6 @@ body {
 width: 285px;
 height: 29px;
 left: 578px;
-gap: 0px;
-opacity: 0px;
 font-family: Montserrat;
 font-size: 24px;
 font-weight: 600;
@@ -184,9 +228,15 @@ line-height: 29.26px;
 text-align: center;
 }
 
-@media (max-width: 1024px) {
+.text {
+ font-size: 64px;
+font-weight: 700;
+line-height: 78.02px;
+text-align: left;
 
-  .header {
+   }
+   @media (max-width: 1024px) {
+   .header {
     background: url(img/Vector.svg) no-repeat right top,
     url(mg/Star\ 2.svg) no-repeat 37px 97px,
     url(img/Star\ 3.svg) no-repeat 21px 64px,
@@ -195,25 +245,21 @@ text-align: center;
 
     max-width: 1024px;
     display: block;
-.text {
-  font-family: Montserrat;
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 58.02px;
-  text-align: left; 
-  width: 500px;
- }
+  }
  .top__text {
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 32px;
   text-align: left;
-  width: 500px;
   color: #202027;
   padding-bottom: 48px;
 }
 
+.card-wrapper {
+  display: flex;
+  
+ }
 }
 @media (max-width: 767px) {
   .desktop-only {
@@ -225,14 +271,18 @@ text-align: center;
   .product__title {
     display: none;
   }
-  .mini-only {
-    display: block;
-  }
+ 
 }
 .product-container fieldset {
   margin-bottom: 120px;
  }
+ .footer {
+  width: 100%;
+  height: auto;
+  background-color: #BDED35;
 
+  }
+ 
 .prod1 {
   width: 100%;
   max-width: 378px;
@@ -274,7 +324,10 @@ text-align: center;
   height: 314px;
   border-radius: 30px;
 }
-
+.top__text {
+  font-size: 36px;
+  font-weight: 500;
+}
 .link1 {
   width: 378px;
   height: 159px;
@@ -297,7 +350,6 @@ text-align: center;
   width: 108px;
   height: 36px;
   padding: 8px 16px 10px 16px;
-  gap: 0px;
   border-radius: 52.58px;
   opacity: 0px;
   font-size: 17.19px;
@@ -337,7 +389,6 @@ text-align: center;
   padding-right: 32px;
   padding-bottom: 36px;
   color: #202027;
-
  }
 
 .product__text2 {
@@ -378,12 +429,7 @@ align-items: center;
   position: relative;
 }
 
-.footer {
-  width: 100%;
-  height: 150px;
-  top: 5770px;
-  background: rgb(189, 237, 53);
-}
+
 .footer__title {
   /* Все права защищены. */
 
@@ -401,9 +447,6 @@ text-align: center;
 color: #000000;
 padding-top: 61px;
 }
-
-
-
 .product__text-only {
   width: 249px;
   height: 40px;
@@ -466,22 +509,7 @@ padding-top: 61px;
     border-radius: 30px;
     background: #ffffff
   }
-  .mini-only {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 48.76px;
-    text-align: left;
-    color: #f5f1f1;
-    display: block;
-    padding-top: 48px;
-    padding-bottom:48px;
-    padding-left: 16px;
-  }
-
-  /* По умолчанию скрываем элемент */
-.mini-only {
-  display: none;
-}
+ 
   .button-only {
     display: block;
     padding-left: 29px;
