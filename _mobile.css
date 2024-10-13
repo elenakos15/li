@@ -1,0 +1,142 @@
+@charset "UTF-8";
+@media (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 188px);
+    padding-right: calc(50% - 188px);
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .body {
+    font-family: "Montserrat", "sans-serif";
+  }
+  .prod__title {
+    display: none;
+  }
+  .games {
+    display: none;
+  }
+  .main {
+    height: 100vh;
+    background: rgb(32, 32, 39);
+  }
+  .header {
+    background: url(img/Vector.svg) no-repeat right top, url(mg/Star\ 2.svg) no-repeat 37px 97px, url(img/Star\ 3.svg) no-repeat 21px 64px, url(img/Star\ 5.svg) no-repeat 455px 557px, url(img/Star\ 4.svg) no-repeat 344px 580px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+  }
+  .head__text {
+    padding-left: 17px;
+  }
+  .text {
+    /* Добро пожаловать на мой сайт мини-игр */
+    width: 262px;
+    height: 196px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    align-items: center;
+    text-align: center;
+    color: #202027;
+  }
+  .text {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.76px;
+    text-align: center;
+    width: 262px;
+    height: 196px;
+  }
+  .product__title {
+    display: none;
+  }
+  .product__text {
+    display: none;
+  }
+  .product-container {
+    width: 343px;
+    width: 100%;
+    display: none;
+  }
+  .head__text {
+    width: 262px;
+    height: 196px;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.76px;
+    text-align: center;
+    padding-left: 17px;
+  }
+  .footer {
+    width: 375px;
+    width: 100%;
+    height: auto;
+    background-color: #BDED35;
+    padding-left: 50px;
+  }
+}
+@media (max-width: 767px) and (max-width: 767px) {
+  .text {
+    width: 262px;
+    height: 196px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.76px;
+    text-align: center;
+  }
+  .head__text {
+    width: 262px;
+    height: 196px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.76px;
+    text-align: center;
+  }
+  .footer {
+    width: 375px;
+    width: 100%;
+    height: auto;
+    background-color: #BDED35;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__title {
+    line-height: 19.5px;
+    text-align: center;
+    /* Все права защищены. */
+    width: 190px;
+    height: 20px;
+    left: calc(50% - 95px + 0.5px);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  .top-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: center;
+  }
+  .prod__title {
+    display: none;
+  }
+  .games {
+    display: none;
+  }
+  .prod__title {
+    display: none;
+  }
+  .product-content {
+    display: none;
+  }
+}/*# sourceMappingURL=_mobile.css.map */
