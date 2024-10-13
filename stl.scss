@@ -182,6 +182,16 @@ body {
   box-sizing: border-box;
   background: #ffffff;
 }
+.prod {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.prod:hover {
+  transform: scale(1.1); /* Увеличиваем карточку при наведении */
+  z-index: 10; /* Увеличиваем z-index, чтобы не перекрывать другие карточки */
+}
 
 .prod_small {
   height: 473px;
@@ -244,7 +254,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
+ 
   background: rgb(189, 237, 53);
 }
 
@@ -289,6 +299,11 @@ body {
   height: 500px;
   border-radius: 60px;
   row-gap: 24px;
+  width: 378px;
+  border-radius: 30px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  background: #ffffff;
  }
 
 .prod__img {
@@ -390,7 +405,6 @@ body {
       justify-content: space-between; 
     }
 .games {
-  display: flex;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

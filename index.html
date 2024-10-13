@@ -60,15 +60,13 @@
                     Камень, ножницы,<br />
                     бумага
                   </p>
-
-                  <input type="button" class="button-only" value="Играть!" />
-                  <div class="product__box-price" style="display: flex; gap: 2px"></div>
+                <div class="product__box-price" style="display: flex; gap: 2px"></div>
                 </div>
               </fieldset>
             </div>
 
             <div class="card-wrapper">
-              <fieldset class="prod prod_medium">
+              <fieldset class="prod prod__medium">
                 <a class="prod2" href="#">
                   <img src="img/card2.svg" alt="Викторина" class="product__img" />
                 </a>
@@ -78,7 +76,7 @@
                 </div>
               </fieldset>
 
-              <fieldset class="prod prod_medium">
+              <fieldset class="prod prod__medium">
                 <a class="product5" href="#">
                   <img src="img/card5.svg" alt="Првик" class="product__img" />
                 </a>
@@ -120,19 +118,22 @@
 
       <h2 class="prod__title">Мини-игры</h2>
       <div class="games center">
-      <fieldset class="prod games-big">
+      <fieldset class="games-big">
         <div class="prod-info">
           <p class="name__text">Угадай число</p>
           <p class="content">Попробуй угадать случайное число от 1 до 100.</p>
-          <input type="button" class="button" value="Играть" />
-        </div>
+         
+          <input type="button" class="button" value="Играть" id="playButton"/>
+         </div>
+
         <a class="product1" href="#">
           <img src="img/card1.svg" alt="Викторина" class="prod__img"
         /></a>
+       
       </fieldset>
       
            
-        <fieldset class="prod games-big">
+        <fieldset class="games-big">
           <a class="prod2" href="#">
             <img src="img/card2.svg" alt="арифметика" class="prod__img" />
           </a>
@@ -143,7 +144,7 @@
           </div>
         </fieldset>
 
-      <fieldset class="prod games-big">
+      <fieldset class="games-big">
         <div class="prod-info">
           <p class="name__text">Переверни текст</p>
           <p class="content">Попробуй ввести текст, который будет перевернут.</p>
@@ -154,7 +155,7 @@
         /></a>
       </fieldset>
 
-      <fieldset class="prod games-big">
+      <fieldset class="games-big">
         <a class="prod2" href="#">
           <img src="img/card5.svg" alt="Викторина" class="prod__img" />
         </a>
@@ -165,7 +166,7 @@
         </div>
       </fieldset>
 
-      <fieldset class="prod games-big">
+      <fieldset class="games-big">
         <div class="prod-info__big">
           <div class="knb">
           <p class="name__text">Камень,<br>ножницы,<br>бумага</p>
@@ -178,7 +179,7 @@
         /></a>
       </fieldset>
 
-      <fieldset class="prod games-big">
+      <fieldset class="games-big">
         <a class="prod2" href="#">
           <img src="img/card6.svg" alt="Генератор" class="prod__img" />
         </a>
@@ -201,6 +202,7 @@
     <footer class="footer">
       <p class="footer__title">Все права защищены.</p>
     </footer>
+    
     <script src="HW-3.js"></script>
   </body>
 </html>
