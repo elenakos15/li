@@ -4,14 +4,31 @@
     padding-left: calc(50% - 188px);
     padding-right: calc(50% - 188px);
   }
+  * {
+    margin: 0;
+    padding: 0;
+  }
   .body {
     font-family: "Montserrat", "sans-serif";
   }
+  .prod__title {
+    display: none;
+  }
+  .games {
+    display: none;
+  }
+  .main {
+    height: 100vh;
+    background: rgb(32, 32, 39);
+  }
   .header {
-    background: url(img/Vector.svg) no-repeat right top, url(mg/Star\ 2.svg) no-repeat 37px 97px, url(img/Star\ 3.svg) no-repeat 21px 64px, url(img/Star\ 5.svg) no-repeat 455px 538px, url(img/Star\ 4.svg) no-repeat 344px 568px;
-    width: 376px;
-    height: 700px;
-    display: block;
+    background: url(img/Vector.svg) no-repeat right top, url(mg/Star\ 2.svg) no-repeat 37px 97px, url(img/Star\ 3.svg) no-repeat 21px 64px, url(img/Star\ 5.svg) no-repeat 455px 557px, url(img/Star\ 4.svg) no-repeat 344px 580px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+  }
+  .head__text {
+    padding-left: 17px;
   }
   .text {
     /* Добро пожаловать на мой сайт мини-игр */
@@ -24,16 +41,14 @@
     align-items: center;
     text-align: center;
     color: #202027;
-    padding-top: 147px;
   }
-  .buton {
-    width: 285px;
-    height: 55px;
-    border-radius: 60px;
-    border: 1px;
-    padding-left: 46px;
-    padding-top: 36px;
-    padding-bottom: 182px;
+  .text {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.76px;
+    text-align: center;
+    width: 262px;
+    height: 196px;
   }
   .product__title {
     display: none;
@@ -41,90 +56,10 @@
   .product__text {
     display: none;
   }
-  .mini-only {
-    display: block;
-  }
-  .mini-only {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 48.76px;
-    text-align: left;
-    color: #FFFFFF;
-    padding-left: 16px;
-    padding-top: 48px;
-    padding-top: 48px;
-  }
-  .product__name {
-    display: none;
-  }
   .product-container {
     width: 343px;
-    height: 1326px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 100%;
-  }
-  .button-only {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 285px;
-    height: 55px;
-    border-radius: 60px;
-    padding: 16px 28px 16px 28px;
-    border: 1px;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 22.67px;
-    text-align: center;
-    padding-bottom: 32px;
-    padding-top: 32px;
-    padding-left: 29px;
-    background: #202027;
-    color: #efe9e9;
-    border: 1px solid #202027;
-  }
-  .button-only {
-    display: block;
-  }
-  .product__img {
-    /* Обложка карточки */
-    width: 343px;
-    height: 284.93px;
-    background: #565EEF;
-    border-radius: 30px;
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-  }
-  .link1 {
-    width: 343px;
-    height: 237px;
-    border-radius: 30px;
-    background: #F7F6F6;
-  }
-  .product__name {
     display: none;
-  }
-  .product__text1-only {
-    display: block; /* Отображаем текст для мобильной версии */
-  }
-  .link2 {
-    width: 343pxpx;
-    height: 282.7px;
-    padding: 29.04px 29.04px 32.67px 29.04px;
-    gap: 9.07px;
-    border-radius: 27.22px 0px 0px 0px;
-  }
-  .product__text2 {
-    width: 284.93px;
-    height: 78px;
   }
   .head__text {
     width: 262px;
@@ -134,12 +69,7 @@
     font-weight: 700;
     line-height: 48.76px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 147px;
-    align-content: center;
-    flex-wrap: wrap;
+    padding-left: 17px;
   }
   .footer {
     width: 375px;
@@ -149,70 +79,18 @@
     padding-left: 50px;
   }
 }
-@media (max-width: 767px) and (max-width: 768px) {
-  .mini-only {
+@media (max-width: 767px) and (max-width: 767px) {
+  .text {
+    width: 262px;
+    height: 196px;
     font-size: 40px;
     font-weight: 700;
     line-height: 48.76px;
-    text-align: left;
-    color: #000;
-    display: block;
-  }
-  .button-only {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 285px;
-    height: 55px;
-    border-radius: 60px;
-    padding: 16px 28px 16px 28px;
-    border: 1px;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 22.67px;
     text-align: center;
-    padding-bottom: 32px;
-    padding-top: 32px;
-    padding-left: 29px;
-    background: #202027;
-    color: #efe9e9;
-    border: 1px solid #202027;
-  }
-  .button-only {
-    display: block;
-  }
-  .product__img {
-    width: 343px;
-    height: 285px;
-    border-radius: 30px;
-    padding-bottom: 32px;
-  }
-  .link4 {
-    height: 341px;
-    border-radius: 30px;
-    background: #F7F6F6;
-  }
-  .product__text1-only {
-    display: block; /* Отображаем текст для мобильной версии */
-  }
-  .link3 {
-    width: 343pxpx;
-    height: 321px;
-    padding: 29.04px 29.04px 32.67px 29.04px;
-    gap: 9.07px;
-    border-radius: 27.22px 0px 0px 0px;
-  }
-  .product__text2 {
-    width: 284.93px;
-    height: 78px;
   }
   .head__text {
     width: 262px;
     height: 196px;
-    font-family: Montserrat;
     font-size: 40px;
     font-weight: 700;
     line-height: 48.76px;
@@ -224,12 +102,14 @@
     height: auto;
     background-color: #BDED35;
     padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .footer__title {
     line-height: 19.5px;
     text-align: center;
     /* Все права защищены. */
-    position: absolute;
     width: 190px;
     height: 20px;
     left: calc(50% - 95px + 0.5px);
@@ -241,43 +121,22 @@
     text-align: center;
     color: #000000;
   }
-  .product__text1-only {
-    width: 285px;
-    height: 60px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    color: #000000;
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    padding-left: 29px;
-  }
-  .product__text1-only {
-    display: block;
-    padding-left: 29px;
-    padding-bottom: 32px;
-  }
   .top-text {
     font-size: 16px;
     font-weight: 400;
     line-height: 19.5px;
     text-align: center;
   }
-  .prod1 {
+  .prod__title {
     display: none;
   }
-  .text {
-    width: 262px;
-    height: 196px;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 48.76px;
-    text-align: center;
+  .games {
+    display: none;
+  }
+  .prod__title {
+    display: none;
+  }
+  .product-content {
+    display: none;
   }
 }/*# sourceMappingURL=_mobile.css.map */

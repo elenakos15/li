@@ -9,86 +9,34 @@
     padding: 0;
   }
   .main {
-    height: 100vh;
+    background: rgb(32, 32, 39);
   }
-  .tablet-only {
-    display: block;
+  .prod__title {
+    display: none;
   }
-  .mini-only {
+  .games {
     display: none;
   }
   .header {
-    background: url(img/Vector.svg) no-repeat right top, url(mg/Star\ 2.svg) no-repeat 37px 97px, url(img/Star\ 3.svg) no-repeat 21px 64px;
+    background: url(img/Vector.svg) no-repeat right top, url(mg/Star\ 2.svg) no-repeat 37px 97px, url(img/Star\ 3.svg) no-repeat 21px 64px, url(img/Star\ 5.svg) no-repeat 677px 538px, url(img/Star\ 4.svg) no-repeat 723px 568px;
+    height: 400px;
   }
   .product-box {
     width: 100%;
   }
-  .product-content {
-    flex-direction: column;
-    row-gap: 6px;
-    flex-wrap: wrap;
-    -moz-column-gap: 2px;
-         column-gap: 2px;
-  }
-  .product-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; /* Центровка элементов */
-    padding-top: 94px;
-    padding-bottom: 92px;
-  }
-  .product__img {
-    max-width: 100%; /* Адаптация изображений под размеры контейнера */
-  }
-  .prod1 {
-    width: 378px;
-    height: 473px;
-  }
-  .prod4 {
-    width: 378px;
-    height: 551px;
-  }
-}
-@media (max-width: 1024px) and (max-width: 1024px) and (min-width: 768px) {
-  .tablet-only {
-    display: block; /* Показываем текст на планшетах */
-  }
-  .footer {
-    width: 100%;
-    height: auto;
-    background-color: #BDED35;
-    padding-left: 50px;
-  }
-  .footer__title {
-    color: #000;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 29.26px;
-    text-align: center;
-    background-color: #BDED35;
-    padding-left: 578px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  .footer__box {
-    display: flex;
-    justify-content: space-between;
-  }
   .product__title {
     width: 314px;
     height: 78px;
-    gap: 0px;
-    opacity: 0px;
-    font-family: Montserrat;
-    font-size: 64px;
-    font-weight: 700;
+    font-size: 48px;
+    font-weight: 600;
     line-height: 78.02px;
     text-align: left;
     display: block;
     color: rgb(255, 255, 255);
+    letter-spacing: 0px;
+    padding-bottom: 24px;
   }
   .product__text {
-    width: 788px;
     height: 96px;
     opacity: 1px;
     display: block;
@@ -99,41 +47,41 @@
     letter-spacing: 0px;
     text-align: left;
   }
-  .prod1, .prod2 {
-    position: relative;
-  }
-}
-@media (max-width: 1024px) and (max-width: 1024px) and (min-width: 768px) and (max-width: 1024px) {
-  .body {
-    font-size: 20px; /* Уменьшаем размер шрифта для планшетной версии*/
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 30px; /*Уменьшаем отступ сверху*/
-    padding-bottom: 30px; /*Уменьшаем отступ снизу*/
+  .product-content {
+    max-width: 1024px;
   }
   .product-content {
-    max-width: 1201px;
-    height: 1056px;
-    gap: 32px;
+    padding-top: 94px;
+    display: flex;
+    flex-wrap: wrap;
+    -moz-column-gap: 32px;
+    /* column-gap: 32px; */
+    align-content: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
   }
-  .prod1 {
+  .card-wrapper {
+    display: flex;
+    flex-direction: row;
+    row-gap: 40px;
+    -moz-column-gap: 70px;
+         column-gap: 70px;
     width: 378px;
-    height: 473px;
-  }
-  .prod4 {
-    width: 378px;
-    height: 551px;
-  }
-}
-@media (max-width: 1024px) and (max-width: 1024px) and (min-width: 768px) and (max-width: 1024px) and (max-width: 1024px) and (min-width: 768px) {
-  .tablet-only {
-    display: block; /* Показываем текст на планшетах */
+    flex-wrap: nowrap;
   }
   .footer {
     width: 100%;
     height: auto;
     background-color: #BDED35;
-    padding-left: 50px;
+  }
+  .footer__box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer {
+    width: 100%;
+    height: auto;
+    background-color: #BDED35;
   }
   .footer__title {
     color: #000;
@@ -142,7 +90,6 @@
     line-height: 29.26px;
     text-align: center;
     background-color: #BDED35;
-    padding-left: 578px;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -155,29 +102,6 @@
     display: flex;
     gap: 20px; /* Отступ между карточками */
   }
-  .prod1, .prod2 {
-    position: relative;
-  }
-  .product__title {
-    color: rgb(255, 255, 255);
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 78px;
-    letter-spacing: 0px;
-    text-align: left;
-    padding-bottom: 24px;
-    padding-top: 94px;
-  }
-  .product-container {
-    width: 343px;
-    height: 1326px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-  }
-}
-@media (max-width: 1024px) and (max-width: 1024px) and (min-width: 768px) and (max-width: 1024px) {
   .text {
     font-family: Montserrat;
     font-size: 36px;
@@ -195,5 +119,13 @@
     width: 500px;
     color: #202027;
     padding-bottom: 48px;
+  }
+  .head__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 769px;
+    padding-top: 196px;
+    padding-left: 70px;
   }
 }/*# sourceMappingURL=_tabler.css.map */
