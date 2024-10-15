@@ -375,7 +375,10 @@ body {
   text-align: center;
   flex: none;
      }
-
+     .button:hover {
+      background: #ffffff;
+      color: #000000;
+    }
    .prod__title {
     width: 400px;
     height:78px;
