@@ -31,15 +31,13 @@ body {
 }
 
 .text {
-  font-size: 64px;
-  font-weight: 700;
   line-height: 78.02px;
   text-align: left;
   max-width: 769px;
   height: 156px;
   color: #202027;
   padding-bottom: 24px;
-  padding-top: 94px;
+  padding-top: 147px;
 
   /* Добро пожаловать на мой сайт мини-игр */
   font-style: normal;
@@ -413,6 +411,12 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 32px;
+}
+.top__text {
+  font-size: 16px;
+ font-weight: 400;
+   line-height: 32px;
+   text-align: left;
 }
  @import "tabler";
 @import "mobile";

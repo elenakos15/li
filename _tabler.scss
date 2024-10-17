@@ -17,14 +17,14 @@
                 display: none;
             } 
                
-    .header {
-        background: url(img/Vector.svg) no-repeat right top,
-                    url(mg/Star\ 2.svg) no-repeat 37px 97px,
-                    url(img/Star\ 3.svg) no-repeat 21px 64px,
-                    url(img/Star\ 5.svg) no-repeat 677px 538px,
-                    url(img/Star\ 4.svg) no-repeat 723px 568px;
-                    height: 400px;
-                    }
+    
+      .header {
+        background: url(img/Vector.svg) no-repeat right top, url(img/Star 2.svg) no-repeat 37px 97px, 
+        url(img/Star 3.svg) no-repeat 21px 64px, 
+        url(img/Star 5.svg) no-repeat 502px 597px,
+         url(img/Star 4.svg) no-repeat 644px 650px;
+         height: 800px;
+      }
 
       .product-box {
         width: 100%;
@@ -53,10 +53,10 @@
         text-align: left;
        }
   
-        .product-content {
-        max-width: 1024px;
+.product-content {
+max-width: 1024px;
 
-        }  
+}  
       
              .product-content {
                 padding-top: 94px;
@@ -65,7 +65,7 @@
                 -moz-column-gap: 32px;
                 /* column-gap: 32px; */
                 align-content: flex-end;
-                flex-direction: column;
+                flex-direction: row;
                 justify-content: space-around;
               
              }
@@ -73,18 +73,24 @@
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
-                gap: 12px;
                 }
+
         
-              .footer__box {
+        .footer {
+        width: 100%;
+        height: auto;
+        background-color: #BDED35;
+                }
+                     
+            .footer__box {
                 display: flex;
               justify-content: space-between;
             }
          
-              .footer {
-              width: 100%;
-              height: auto;
-              background-color: #BDED35;
+        .footer {
+        width: 100%;
+        height: auto;
+        background-color: #BDED35;
             
             &__title {
                 color:#000;
@@ -131,7 +137,6 @@
                 flex-direction: column;
                 align-items: flex-start;
                 max-width: 769px;
-                padding-top: 196px;
                 padding-left: 70px;
         }
     }
