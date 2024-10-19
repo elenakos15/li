@@ -38,7 +38,6 @@ body {
   color: #202027;
   padding-bottom: 24px;
   padding-top: 147px;
-
   /* Добро пожаловать на мой сайт мини-игр */
   font-style: normal;
   display: flex;
@@ -62,7 +61,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 16px 28px;
+  padding: 16px 103px;
   gap: 10px;
   width: 247px;
   height: 66px;
@@ -72,8 +71,8 @@ body {
   border-radius: 60px;
   font-family: Montserrat;
   font-size: 24px;
-  font-weight: 600;
-  line-height: 34.01px;
+  font-weight: 400;
+  line-height: 32px;
   text-align: center;
   flex: none;
 }
@@ -185,7 +184,15 @@ body {
   overflow: hidden;
   transition: transform 0.3s ease;
 }
-
+.product-box {
+background: url(img/Star\ 1.svg) no-repeat right top,
+url(img/Star\ 11.svg) no-repeat 28px 770px, 
+url(img/Star\ 12.svg) no-repeat 40px 822px,
+url(img/Star\ 1.svg) no-repeat right top, url(img/Star\ 11.svg) no-repeat 28px 770px,
+ url(img/Star\ 12.svg) no-repeat 40px 822px, 
+ url(img/Star\ 8.svg) no-repeat 1319px 4636px, 
+ url(img/Star\ 10.svg) no-repeat 1290px 4684px;
+}
 .prod:hover {
   transform: scale(1.1); /* Увеличиваем карточку при наведении */
   z-index: 10; /* Увеличиваем z-index, чтобы не перекрывать другие карточки */
@@ -252,7 +259,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
- 
+ height: 150px;
   background: rgb(189, 237, 53);
 }
 
