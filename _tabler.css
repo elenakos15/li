@@ -41,7 +41,7 @@
     height: 96px;
     opacity: 1px;
     display: block;
-    color: rgb(255, 255, 255);
+    color: #202027;
     font-family: Montserrat;
     font-size: 32px;
     font-weight: 700;
@@ -56,7 +56,7 @@
     -moz-column-gap: 32px;
     align-content: flex-end;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
   .card-wrapper {
     display: flex;

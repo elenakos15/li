@@ -31,6 +31,9 @@ body {
 }
 
 .text {
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
   line-height: 78.02px;
   text-align: left;
   max-width: 769px;
@@ -61,7 +64,6 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 16px 103px;
   gap: 10px;
   width: 247px;
   height: 66px;
@@ -190,8 +192,9 @@ url(img/Star\ 11.svg) no-repeat 28px 770px,
 url(img/Star\ 12.svg) no-repeat 40px 822px,
 url(img/Star\ 1.svg) no-repeat right top, url(img/Star\ 11.svg) no-repeat 28px 770px,
  url(img/Star\ 12.svg) no-repeat 40px 822px, 
- url(img/Star\ 8.svg) no-repeat 1319px 4636px, 
+ url(img/Star\ 8.svg) no-repeat 1360px 4826px, 
  url(img/Star\ 10.svg) no-repeat 1290px 4684px;
+ height: 5000px;
 }
 .prod:hover {
   transform: scale(1.1); /* Увеличиваем карточку при наведении */
@@ -395,7 +398,6 @@ url(img/Star\ 1.svg) no-repeat right top, url(img/Star\ 11.svg) no-repeat 28px 7
     line-height: 78.02px;
     text-align: left;
      padding-bottom: 72px;
-     padding-left: 119px;
      padding-top: 96px;
      color: #FFFFFF;
     }
@@ -420,7 +422,7 @@ url(img/Star\ 1.svg) no-repeat right top, url(img/Star\ 11.svg) no-repeat 28px 7
   row-gap: 32px;
 }
 .top__text {
-  font-size: 16px;
+  font-size: 24px;
  font-weight: 400;
    line-height: 32px;
    text-align: left;
