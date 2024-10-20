@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 28px;
+  gap: 10px;
+  width: 285px;
+  height: 50px;
+  background: #0b0be2;
+  border: 1px solid #202027;
+  border-radius: 60px;
+  font-family: Montserrat;
+  color: #efe9e9;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 34.01px;
+  text-align: center;
+  flex: none;
+}

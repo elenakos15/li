@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задания JavaScript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@320;400;480;500;600;640&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+<body>
+
+  <!-- Задание 1 -->
+  <h1 id="header" class="header">Это заголовок</h1>
+  <input type="button" class="button" id="toggleButton" value="Скрыть" />
+  <script>
+      const header = document.querySelector('#header');
+      const toggleButton = document.querySelector('#toggleButton');
+      toggleButton.addEventListener('click', function() {
+          if (header.style.display === 'none') {
+              header.style.display = 'block';
+              toggleButton.value = 'Скрыть';
+          } else {
+              header.style.display = 'none';
+              toggleButton.value = 'Показать';
+          }
+      });
+  </script>
+
+    <!-- Задание 2 -->
+    <h2 id="text">Это текст абзаца</h2>
+    <input type="button" class="button" id="colorButton" value="Изменить цвет" />
+   
+    <script>
+        const text = document.querySelector('#text');
+        const colorButton = document.querySelector('#colorButton');
+
+        colorButton.addEventListener('click', function() {
+            text.style.color = 'blue';
+        });
+    </script>
+
+    <!-- Задание 3 -->
+    <h1 id="headerText">Изменяемый заголовок</h1>
+    <input type="button" class="button" id="changeTextButton" value="Изменить текст" />
+    
+    <script>
+        const headerText = document.querySelector('#headerText');
+        const changeTextButton = document.querySelector('#changeTextButton');
+
+        changeTextButton.addEventListener('click', function() {
+            headerText.textContent = 'Привет, мир!';
+        });
+    </script>
+
+    <!-- Задание 4 -->
+    <div class="description">Описание 1</div>
+    <div class="description">Описание 2</div>
+    <div class="description">Описание 3</div>
+
+    <script>
+        const descriptions = document.querySelectorAll('.description');
+        descriptions.forEach(function(item) {
+            item.textContent = 'Измененный текст';
+        });
+    </script>
+
+    <!-- Задание 5 -->
+    <p class="description">Абзац 1</p>
+    <p>Абзац 2</p>
+    <p class="description">Абзац 3</p>
+
+    <script>
+        const descriptionParagraphs = document.querySelectorAll('.description');
+        descriptionParagraphs.forEach(function(item) {
+            item.textContent = 'Новый текст';
+        });
+    </script>
+
+    <!-- Задание 6 -->
+ 
+    <input type="button" class="button" id="addElementButton" value="Добавить элемент" />
+    <script>
+        const addElementButton = document.querySelector('#addElementButton');
+
+        addElementButton.addEventListener('click', function() {
+            const newParagraph = document.createElement('p');
+            newParagraph.textContent = 'Новый абзац';
+            document.body.appendChild(newParagraph);
+        });
+    </script>
+
+    <!-- Задание 7 -->
+    <p class="description">Описание для удаления 1</p>
+    <p class="description">Описание для удаления 2</p>
+    
+    <input type="button" class="button" id="removeElementButton" value="Удалить элемент" />
+    <script>
+        const removeElementButton = document.querySelector('#removeElementButton');
+
+        removeElementButton.addEventListener('click', function() {
+            const firstDescription = document.querySelector('.description');
+            if (firstDescription) {
+                firstDescription.remove();
+            }
+        });
+    </script>
+
+</body>
+</html>
+
