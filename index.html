@@ -113,12 +113,15 @@
               </fieldset>
             </div>
           </div>
-       
-     
+       </div>
+      </div>
+      <div class="fon">
+<div class="center">
 
       <h2 class="prod__title">Мини-игры</h2>
-      <div class="games center">
-      <fieldset class="games-big">
+  <div class="games">
+      <fieldset class="game-big">
+      
         <div class="prod-info">
           <p class="name__text">Угадай число</p>
           <p class="content">Попробуй угадать случайное число от 1 до 100.</p>
@@ -127,82 +130,100 @@
          </div>
 
         <a class="product1" href="#">
-          <img src="img/card1.svg" alt="Викторина" class="prod__img"
+          <img src="img/card1.svg" alt="угадай число" class="prod__img"
         /></a>
-       
       </fieldset>
-      
-           
+     
+                 
         <fieldset class="games-big">
-          <a class="prod2" href="#">
-            <img src="img/card2.svg" alt="арифметика" class="prod__img" />
+         <a class="prod2" href="#">
+          <img src="img/card2.svg" alt="арифметика" class="prod__img" />
           </a>
           <div class="prod-info__medium">
            <p class="name__text">Простая арифметика</p>
            <p class="content">Попробуй решить простые арифметические задачи.</p>
-           <input type="button" class="button" value="Играть" />
+           <input type="button" class="button" id="decideButton" value="Играть" />
           </div>
-        </fieldset>
+         </fieldset>
 
-      <fieldset class="games-big">
+      <fieldset class="game-big">
+      
         <div class="prod-info">
           <p class="name__text">Переверни текст</p>
           <p class="content">Попробуй ввести текст, который будет перевернут.</p>
-          <input type="button" class="button" value="Играть" />
+          <input type="button" class="button" id="perevButton" value="Играть" />
         </div>
         <a class="product1" href="#">
           <img src="img/card3.svg" alt="Перевертыш" class="prod__img"
         /></a>
+      
       </fieldset>
 
       <fieldset class="games-big">
+        
         <a class="prod2" href="#">
           <img src="img/card5.svg" alt="Викторина" class="prod__img" />
         </a>
         <div class="prod-info__medium">
          <p class="name__text">Викторина</p>
          <p class="content">Отвечай на вопросы викторины с вариантами ответов.</p>
-         <input type="button" class="button" value="Играть" />
+         <input type="button" class="button" id="victButton"  value="Играть" />
         </div>
+     
       </fieldset>
 
-      <fieldset class="games-big">
+      <fieldset class="game-big">
+        
         <div class="prod-info__big">
           <div class="knb">
-          <p class="name__text">Камень,<br>ножницы,<br>бумага</p>
+          <p class="name__text">Камень, <br>ножницы,<br> бумага</p>
         </div>
           <p class="content">Сыграй в популярную игру,<br> против компьютера.</p>
-          <input type="button" class="button" value="Играть" />
+          <input type="button" class="button" id="rockButton" value="Играть" />
         </div>
         <a class="product1" href="#">
           <img src="img/Card1.png" alt="КНБ" class="prod__img"
         /></a>
+      
       </fieldset>
 
       <fieldset class="games-big">
+       
         <a class="prod2" href="#">
           <img src="img/card6.svg" alt="Генератор" class="prod__img" />
         </a>
-        <div class="prod-info__big">
+        <div class="prod-info__superbig">
         <div class="knb">
          <p class="name__text">Генератор<br>случайных<br>чисел</p>
          </div>
          <div class="knb">
-         <p class="content">Игра, в которой при клике на кнопку<br>фон страницы меняется на случайный.</p>
+         <p class="content__big">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
          </div>
-         <input type="button" class="button" value="Играть" />
+         <input type="button" class="button" id="colorButton"    value="Играть" />
         </div>
-        
+    
       </fieldset>
+    </div>
     </div>
   </div>
   </div>
+</div>
     </main>
 
     <footer class="footer">
       <p class="footer__title">Все права защищены.</p>
     </footer>
+   
+    <script src="ygadai.js"></script>
     
-    <script src="hw-4.js"></script>
+    <script src="decide.js"></script>
+    
+    <script src="perever.js"></script>
+    
+    <script src="vict.js"></script>
+    
+    <script src="rock.js"></script>
+    
+    <script src="random.js"></script>
   </body>
 </html>

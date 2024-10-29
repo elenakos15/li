@@ -13,7 +13,7 @@ body {
 
 .header {
   background: url(img/Group\ 1597880565.svg) no-repeat right top,
-    url(img/Star\ 2.svg) no-repeat 63px 94px, url(img/Star\ 3.svg) no-repeat 156px 59px,
+    url(img/Star\ 2.svg) no-repeat 63px 94px, url(img/Star\ 3.svg) no-repeat 156px 69px,
     url(img/Star\ 4.svg) no-repeat 1013px 568px, 
     url(img/Star\ 5.svg) no-repeat 948px 538px;
     height: 800px;
@@ -46,7 +46,11 @@ body {
   display: flex;
   align-items: center;
 }
-
+.main {
+  height: 5000px;
+  background: rgb(32, 32, 39);
+  
+}
 .top__text {
   font-family: Montserrat;
   font-size: 24px;
@@ -112,8 +116,16 @@ body {
   width: 100%;
   background: url(img/Star\ 1.svg) no-repeat right top,
   url(img/Star\ 11.svg) no-repeat 28px 770px,
-  url(img/Star\ 12.svg) no-repeat 40px 822px,
+  url(img/Star\ 12.svg) no-repeat 45px 822px,
  }
+.fon {
+  width: 100%;
+  background: url(img/Star\ 7.png) no-repeat 1331px 168px,
+  url(img/Star\ 8.svg) no-repeat 1389px 206px,
+  url(img/Star\ 10.svg) no-repeat 1319px 3500px,
+  url(img/Star\ 6.svg) no-repeat 1386px 3426px;  
+  height: 3600px;
+}
 .product-content {
   padding-top: 94px;
    display: flex;
@@ -122,10 +134,7 @@ body {
   column-gap: 32px;
   
 }
-.main {
-  height: 4900px;
-  background: rgb(32, 32, 39);
-}
+
 
 .geim-text {
   width: 788px;
@@ -213,14 +222,7 @@ body {
   left: 259px;
 }
 
-.prod4 {
-  width: 378px;
-  height: 551px;
-  border-radius: 30px;
-  border: 1px solid #ffffff;
-  box-sizing: border-box;
-  background: #ffffff;
-}
+
 
 .product__name {
   border-radius: 52.58px;
@@ -251,10 +253,10 @@ body {
 }
 
 .footer {
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
- 
   background: rgb(189, 237, 53);
 }
 
@@ -294,13 +296,24 @@ body {
 .games-big {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 1200px;
   height: 500px;
-  border-radius: 60px;
+  border-radius: 50px;
   row-gap: 24px;
-  width: 378px;
-  border-radius: 30px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  background: #ffffff;
+ }
+
+ .game-big {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  width: 1200px;
+  height: 500px;
+  border-radius: 50px;
+  row-gap: 24px;
   border: 1px solid #ffffff;
   box-sizing: border-box;
   background: #ffffff;
@@ -319,11 +332,21 @@ body {
     width: 504px;
     height: 250px;
     border-radius: 30px;
-    padding-bottom: 203px;
+    padding-left: 48px;
+    padding-top: 48px;
+  }
+  .prod-info__superbig {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 24px;
+    width: 504px; 
+    height: 367px;
+    border-radius: 30px;
     padding-left: 48px;
     padding-top: 48px;
     justify-content: space-between;
-}
+  } 
 .prod-info__big {
   display: flex;
   flex-wrap: wrap;
@@ -333,11 +356,10 @@ body {
   height: 367px;
   border-radius: 30px;
   padding-bottom: 85px;
-  padding-left: 48px;
   padding-top: 48px;
+  padding-right: 48px;
   justify-content: space-between;
-
-}
+  }
   .name__text {
    font-size: 48px;
   font-weight: 700;
@@ -350,8 +372,16 @@ body {
   font-weight: 400;
   line-height: 32px;
   text-align: left;
-  width: 497px;
+  width: 447px;
   height: 64px;
+    }
+    .content__big {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      text-align: left;
+      width: 497px;
+      height: 64px;
     }
 
   .button {
@@ -375,19 +405,16 @@ body {
   text-align: center;
   flex: none;
      }
-
+     .button:hover {
+      background: #ffffff;
+      color: #000000;
+    }
    .prod__title {
-    width: 400px;
-    height:78px;
-    gap: 72px;
-    opacity: 0px;
-    font-family: Montserrat;
+    
     font-size: 64px;
     font-weight: 700;
     line-height: 78.02px;
-    text-align: left;
      padding-bottom: 72px;
-     padding-left: 119px;
      padding-top: 96px;
      color: #FFFFFF;
     }
@@ -396,7 +423,7 @@ body {
       flex-wrap: wrap;
       flex-direction: column;
       row-gap: 24px;
-      width: 504px;
+      max-width: 504px;
       height: 308px;
       border-radius: 30px;
       padding-bottom: 144px;
@@ -411,6 +438,7 @@ body {
   justify-content: space-between;
   row-gap: 32px;
 }
+
  @import "tabler";
 @import "mobile";
  
