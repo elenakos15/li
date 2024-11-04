@@ -5,7 +5,10 @@
 body {
   font-family: "Montserrat", "sans-serif";
 }
-
+.main {
+  background: rgb(32, 32, 39); 
+ 
+}
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
@@ -28,7 +31,99 @@ body {
   flex-direction: column;
   align-items: flex-start;
   max-width: 769px;
+  padding-bottom: 140px;
 }
+
+.pol__geims {
+  background: #BCEC30;
+  max-width: 1440px; 
+}
+.header__pol {
+  /* Полоса для анимации */
+box-sizing: border-box;
+display: flex;
+overflow: hidden; // Скрыть излишки
+width:3200px;
+flex-wrap: wrap;
+flex-direction: row;
+align-items: flex-start;
+justify-content: center;
+padding: 27px 49px;
+gap: 51px;
+position: relative;
+height: 90px;
+background: #BCEC30;
+border: 1px solid rgba(255, 255, 255, 0.2);
+backdrop-filter: blur(25px);
+animation: scroll-left 10s linear infinite; // Анимация прокрутки
+ }
+
+ .pol__content {
+  text-wrap: nowrap;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  background: #BCEC30;
+  }
+
+  .pol__content {
+    display: flex; 
+    animation: scroll-left 10s linear infinite; 
+}
+
+@keyframes scroll-left {
+  0% {
+      transform: translateX(100%); 
+  }
+  100% {
+      transform: translateX(-100%); 
+  }
+}
+
+.tx1 {
+  height: 33px;
+  font-size: 30px;
+  font-weight: 700;
+  }
+.tx2 {
+ 
+  font-size: 30px;
+  font-weight: 700;
+}
+ .tx3 {
+ 
+  font-size: 30px;
+  font-weight: 700;
+   }
+.tx4 {
+ 
+  font-size: 30px;
+  font-weight: 700;
+}
+.tx5 {
+  
+  font-size: 30px;
+  font-weight: 700;
+}
+.tx6 {
+ 
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.tx1, .tx2, .tx3, .tx4, .tx5, .tx6 {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0; // Удаляем отступы
+}
+ .star1 {
+  width: 36px;
+  height: 36px;
+ }
 
 .text {
   font-size: 64px;
@@ -39,18 +134,16 @@ body {
   height: 156px;
   color: #202027;
   padding-bottom: 24px;
-  padding-top: 94px;
-
+  padding-top: 196px;
   /* Добро пожаловать на мой сайт мини-игр */
   font-style: normal;
   display: flex;
   align-items: center;
 }
 .main {
-  height: 5000px;
   background: rgb(32, 32, 39);
-  
-}
+ }
+
 .top__text {
   font-family: Montserrat;
   font-size: 24px;
@@ -124,7 +217,7 @@ body {
   url(img/Star\ 8.svg) no-repeat 1389px 206px,
   url(img/Star\ 10.svg) no-repeat 1319px 3500px,
   url(img/Star\ 6.svg) no-repeat 1386px 3426px;  
-  height: 3600px;
+  
 }
 .product-content {
   padding-top: 94px;
@@ -134,7 +227,6 @@ body {
   column-gap: 32px;
   
 }
-
 
 .geim-text {
   width: 788px;
@@ -183,7 +275,6 @@ body {
     padding: 32px 32px 36px 32px;
   }
 
-
 .prod {
   width: 378px;
   border-radius: 30px;
@@ -221,8 +312,6 @@ body {
   top: 363px;
   left: 259px;
 }
-
-
 
 .product__name {
   border-radius: 52.58px;
@@ -299,7 +388,7 @@ body {
   justify-content: flex-start;
   width: 1200px;
   height: 500px;
-  border-radius: 50px;
+  border-radius: 30px;
   row-gap: 24px;
   border: 1px solid #ffffff;
   box-sizing: border-box;
@@ -312,7 +401,7 @@ body {
   justify-content:flex-end;
   width: 1200px;
   height: 500px;
-  border-radius: 50px;
+  border-radius: 30px;
   row-gap: 24px;
   border: 1px solid #ffffff;
   box-sizing: border-box;
@@ -323,7 +412,7 @@ body {
   width: 600px;
   height: 500px;
   border-radius: 30px;
-  }
+    }
   .prod-info {
     display: flex;
     flex-wrap: wrap;
@@ -332,8 +421,8 @@ body {
     width: 504px;
     height: 250px;
     border-radius: 30px;
-    padding-left: 48px;
     padding-top: 48px;
+    padding-right: 48px;
   }
   .prod-info__superbig {
     display: flex;
@@ -357,7 +446,6 @@ body {
   border-radius: 30px;
   padding-bottom: 85px;
   padding-top: 48px;
-  padding-right: 48px;
   justify-content: space-between;
   }
   .name__text {
@@ -374,6 +462,7 @@ body {
   text-align: left;
   width: 447px;
   height: 64px;
+  padding-bottom: 12px;
     }
     .content__big {
       font-size: 24px;
@@ -429,7 +518,7 @@ body {
       padding-bottom: 144px;
       padding-left: 48px;
       padding-top: 48px;
-      justify-content: space-between; 
+      justify-content: space-evenly;
     }
 .games {
   display: flex;
@@ -437,6 +526,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 32px;
+  padding-bottom: 144px;
 }
 
  @import "tabler";

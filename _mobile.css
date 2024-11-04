@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @media (max-width: 767px) {
   .center {
-    padding-left: calc(50% - 188px);
-    padding-right: calc(50% - 188px);
+    padding-left: calc(50% - 171.5px);
+    padding-right: calc(50% - 171.5px);
   }
   * {
     margin: 0;
@@ -10,6 +10,10 @@
   }
   .body {
     font-family: "Montserrat", "sans-serif";
+  }
+  .top-header {
+    height: 700px;
+    background: rgb(225, 255, 143);
   }
   .games {
     display: block;
@@ -19,9 +23,10 @@
   }
   .main {
     background: rgb(32, 32, 39);
+    height: 3640px;
   }
   .header {
-    background: url(img/Vector.svg) no-repeat right top, url(img/Star\ 2.svg) no-repeat 37px 97px, url(img/Star\ 3.svg) no-repeat 21px 64px, url(img/Star\ 5.svg) no-repeat 273px 657px, url(img/Star\ 4.svg) no-repeat 304px 680px;
+    background: url(img/Vector.svg) no-repeat right top, url(img/Star\ 2.svg) no-repeat 37px 97px, url(img/Star\ 3.svg) no-repeat 92px 64px, url(img/Star\ 5.svg) no-repeat 273px 557px, url(img/Star\ 4.svg) no-repeat 304px 580px;
     display: flex;
     justify-content: flex-start;
     align-content: center;
@@ -29,7 +34,7 @@
     align-items: center;
   }
   .head__text {
-    padding-left: 17px;
+    padding-left: 7px;
   }
   .text {
     /* Добро пожаловать на мой сайт мини-игр */
@@ -47,6 +52,54 @@
   }
   .product__text {
     display: none;
+  }
+  .header__pol {
+    width: 2717.4px;
+    height: 51.34px;
+    left: -6px;
+    padding: 16px 24px 16px 24px;
+    gap: 6px;
+    box-sizing: border-box;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    background: #BCEC30;
+    border: 0.54px solid rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    animation: scroll-left 10s linear infinite;
+  }
+  .star1 {
+    width: 19px;
+    height: 19px;
+  }
+  .tx1, .tx2, .tx3, .tx4, .tx5, .tx6 {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17.6px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    padding-left: 27px;
+    padding-right: 27px;
+    height: 18px;
+    margin: 0;
+  }
+  .pol__content {
+    display: flex;
+    animation: scroll-left 10s linear infinite;
+  }
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
   .product-container {
     width: 343px;
@@ -68,6 +121,11 @@
     text-align: center;
     padding-left: 17px;
     justify-content: flex-start;
+    padding-bottom: 456px;
+  }
+  .pol__geims {
+    background: #BCEC30;
+    max-width: 425px;
   }
   .footer {
     height: 100px;
@@ -155,7 +213,7 @@
   }
   .prod-info {
     display: flex;
-    width: 285px;
+    width: 243px;
     height: 243.7px;
     border-radius: 27.22px;
     padding-bottom: 32px;
