@@ -25,6 +25,7 @@ body {
 .top-header {
   height: 800px;
   background: rgb(225, 255, 143);
+  overflow: hidden;
 }
 
 .head__text {
@@ -32,12 +33,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   max-width: 769px;
-  padding-bottom: 140px;
-}
-
-.pol__geims {
-  background: #BCEC30;
-  max-width: 1440px;
+  padding-bottom: 156px;
 }
 
 .header__pol {
@@ -59,6 +55,7 @@ body {
   -webkit-backdrop-filter: blur(25px);
           backdrop-filter: blur(25px);
   animation: scroll-left 10s linear infinite;
+  text-transform: uppercase;
 }
 
 .pol__content {
@@ -857,8 +854,7 @@ body {
     height: 3640px;
   }
   .header {
-    background: url(img/Vector.svg) no-repeat right top, url(img/Star\ 2.svg) no-repeat 37px 97px, url(img/Star\ 3.svg) no-repeat 92px 64px, 
-    url(img/Star\ 5.svg) no-repeat 273px 557px, url(img/Star\ 4.svg) no-repeat 304px 580px;
+    background: url(img/Vector.svg) no-repeat right top, url(img/Star\ 2.svg) no-repeat 37px 97px, url(img/Star\ 3.svg) no-repeat 92px 64px, url(img/Star\ 5.svg) no-repeat 273px 557px, url(img/Star\ 4.svg) no-repeat 304px 580px;
     display: flex;
     justify-content: flex-start;
     align-content: center;
@@ -1143,4 +1139,4 @@ body {
     text-align: center;
     flex: none;
   }
-}
+}/*# sourceMappingURL=stl.css.map */
