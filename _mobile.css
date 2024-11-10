@@ -23,10 +23,10 @@
   }
   .main {
     background: rgb(32, 32, 39);
-    height: 3640px;
+    height: 3768px;
   }
   .header {
-    background: url(img/Vector.svg) no-repeat right top, url(img/Star\ 2.svg) no-repeat 37px 97px, url(img/Star\ 3.svg) no-repeat 92px 64px, url(img/Star\ 5.svg) no-repeat 273px 557px, url(img/Star\ 4.svg) no-repeat 304px 580px;
+    background: url(img/Vector.svg) no-repeat right top, url(img/Star\ 21.svg) no-repeat 37px 97px, url(img/Star\ 31.svg) no-repeat 92px 64px, url(img/Star\ 51.svg) no-repeat 273px 557px, url(img/Star\ 41.svg) no-repeat 304px 580px;
     display: flex;
     justify-content: flex-start;
     align-content: center;
@@ -46,6 +46,7 @@
     align-items: center;
     text-align: center;
     color: #202027;
+    padding-top: 147px;
   }
   .product__title {
     display: none;
@@ -106,23 +107,6 @@
     width: 100%;
     display: none;
   }
-  .head__text {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: flex-start;
-    width: 262px;
-    height: 196px;
-    font-family: Montserrat;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 48.76px;
-    text-align: center;
-    padding-left: 17px;
-    justify-content: flex-start;
-    padding-bottom: 456px;
-  }
   .pol__geims {
     background: #BCEC30;
     max-width: 425px;
@@ -148,15 +132,22 @@
     text-align: center;
     color: #000000;
   }
-  .top-text {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.5px;
-    text-align: center;
+  .head__text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
     width: 296px;
-    height: 60px;
-    padding-bottom: 36px;
-    padding-top: 24px;
+    height: 196px;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.76px;
+    text-align: center;
+    padding-left: 17px;
+    justify-content: flex-start;
+    padding-bottom: 456px;
   }
   .product-content {
     display: none;
@@ -211,6 +202,20 @@
     align-content: center;
     flex-direction: column;
   }
+  .mob-cart {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 14px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    background: #ffffff;
+    width: 343px;
+    height: 568.63px;
+    border-radius: 30px;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
   .prod-info {
     display: flex;
     width: 243px;
@@ -239,9 +244,8 @@
     font-weight: 400;
     line-height: 19.5px;
     text-align: left;
-    width: 249px;
+    width: 280px;
     height: 40px;
-    padding-bottom: 8px;
   }
   .content__big {
     font-size: 16px;
@@ -276,8 +280,8 @@
     width: 285px;
     height: 260px;
     border-radius: 30px;
-    padding-left: 29px;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-content: flex-start;
   }
   .prod-info__superbig {
     display: flex;
@@ -310,5 +314,57 @@
     line-height: 34.01px;
     text-align: center;
     flex: none;
+  }
+  .mob-big {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 14px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    background: #ffffff;
+    width: 343px;
+    height: 606.63px;
+    border-radius: 30px;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .mob-min {
+    display: flex;
+    row-gap: 4px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    background: #ffffff;
+    width: 343px;
+    height: 528.63px;
+    border-radius: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: column;
+  }
+  .mob-max {
+    display: flex;
+    row-gap: 4px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    background: #ffffff;
+    width: 343px;
+    height: 626.63px;
+    border-radius: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: column;
+  }
+  .top-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: center;
+    width: 296px;
+    height: 60px;
+    padding-bottom: 36px;
+    padding-top: 24px;
   }
 }/*# sourceMappingURL=_mobile.css.map */
