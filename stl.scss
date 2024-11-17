@@ -5,7 +5,10 @@
 body {
   font-family: "Montserrat", "sans-serif";
 }
-
+.main {
+  background: rgb(32, 32, 39); 
+ 
+}
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
@@ -13,7 +16,7 @@ body {
 
 .header {
   background: url(img/Group\ 1597880565.svg) no-repeat right top,
-    url(img/Star\ 2.svg) no-repeat 63px 94px, url(img/Star\ 3.svg) no-repeat 156px 59px,
+    url(img/Star\ 2.svg) no-repeat 63px 94px, url(img/Star\ 3.svg) no-repeat 156px 69px,
     url(img/Star\ 4.svg) no-repeat 1013px 568px, 
     url(img/Star\ 5.svg) no-repeat 948px 538px;
     height: 800px;
@@ -21,6 +24,7 @@ body {
 .top-header {
   height: 800px;
   background: rgba(225, 255, 143, 1);
+  overflow: hidden;
 }
 
 .head__text {
@@ -28,22 +32,116 @@ body {
   flex-direction: column;
   align-items: flex-start;
   max-width: 769px;
+  padding-bottom: 156px;
 }
 
+
+.header__pol {
+  /* Полоса для анимации */
+box-sizing: border-box;
+display: flex;
+overflow: hidden; // Скрыть излишки
+width:3200px;
+flex-wrap: wrap;
+flex-direction: row;
+align-items: flex-start;
+justify-content: center;
+padding: 27px 49px;
+gap: 51px;
+position: relative;
+height: 90px;
+background: #BCEC30;
+border: 1px solid rgba(255, 255, 255, 0.2);
+backdrop-filter: blur(25px);
+animation: scroll-left 10s linear infinite; // Анимация прокрутки
+text-transform: uppercase;
+ }
+
+ .pol__content {
+  text-wrap: nowrap;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  background: #BCEC30;
+  }
+
+  .pol__content {
+    display: flex; 
+    animation: scroll-left 10s linear infinite; 
+}
+
+@keyframes scroll-left {
+  0% {
+      transform: translateX(100%); 
+  }
+  100% {
+      transform: translateX(-100%); 
+  }
+}
+
+.tx1 {
+  height: 33px;
+  font-size: 30px;
+  font-weight: 700;
+  }
+.tx2 {
+ 
+  font-size: 30px;
+  font-weight: 700;
+}
+ .tx3 {
+ 
+  font-size: 30px;
+  font-weight: 700;
+   }
+.tx4 {
+ 
+  font-size: 30px;
+  font-weight: 700;
+}
+.tx5 {
+  
+  font-size: 30px;
+  font-weight: 700;
+}
+.tx6 {
+ 
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.tx1, .tx2, .tx3, .tx4, .tx5, .tx6 {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0; // Удаляем отступы
+}
+ .star1 {
+  width: 36px;
+  height: 36px;
+ }
+
 .text {
+  font-size: 64px;
+  font-weight: 700;
   line-height: 78.02px;
   text-align: left;
   max-width: 769px;
   height: 156px;
   color: #202027;
   padding-bottom: 24px;
-  padding-top: 147px;
-
+  padding-top: 196px;
   /* Добро пожаловать на мой сайт мини-игр */
   font-style: normal;
   display: flex;
   align-items: center;
 }
+.main {
+  background: rgb(32, 32, 39);
+ }
 
 .top__text {
   font-family: Montserrat;
@@ -110,8 +208,16 @@ body {
   width: 100%;
   background: url(img/Star\ 1.svg) no-repeat right top,
   url(img/Star\ 11.svg) no-repeat 28px 770px,
-  url(img/Star\ 12.svg) no-repeat 40px 822px,
+  url(img/Star\ 12.svg) no-repeat 45px 822px,
  }
+.fon {
+  width: 100%;
+  background: url(img/Star\ 7.png) no-repeat 1331px 168px,
+  url(img/Star\ 8.svg) no-repeat 1389px 206px,
+  url(img/Star\ 10.svg) no-repeat 1319px 3500px,
+  url(img/Star\ 6.svg) no-repeat 1386px 3426px;  
+  
+}
 .product-content {
   padding-top: 94px;
    display: flex;
@@ -119,10 +225,6 @@ body {
   flex-wrap: wrap;
   column-gap: 32px;
   
-}
-.main {
-  height: 4900px;
-  background: rgb(32, 32, 39);
 }
 
 .geim-text {
@@ -172,7 +274,6 @@ body {
     padding: 32px 32px 36px 32px;
   }
 
-
 .prod {
   width: 378px;
   border-radius: 30px;
@@ -211,15 +312,6 @@ body {
   left: 259px;
 }
 
-.prod4 {
-  width: 378px;
-  height: 551px;
-  border-radius: 30px;
-  border: 1px solid #ffffff;
-  box-sizing: border-box;
-  background: #ffffff;
-}
-
 .product__name {
   border-radius: 52.58px;
   background: #F7F7F7;
@@ -249,10 +341,10 @@ body {
 }
 
 .footer {
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
- 
   background: rgb(189, 237, 53);
 }
 
@@ -292,13 +384,24 @@ body {
 .games-big {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 1200px;
   height: 500px;
-  border-radius: 60px;
-  row-gap: 24px;
-  width: 378px;
   border-radius: 30px;
+  row-gap: 24px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  background: #ffffff;
+ }
+
+ .game-big {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  width: 1200px;
+  height: 500px;
+  border-radius: 30px;
+  row-gap: 24px;
   border: 1px solid #ffffff;
   box-sizing: border-box;
   background: #ffffff;
@@ -308,7 +411,7 @@ body {
   width: 600px;
   height: 500px;
   border-radius: 30px;
-  }
+    }
   .prod-info {
     display: flex;
     flex-wrap: wrap;
@@ -317,11 +420,21 @@ body {
     width: 504px;
     height: 250px;
     border-radius: 30px;
-    padding-bottom: 203px;
+    padding-top: 48px;
+    padding-right: 48px;
+  }
+  .prod-info__superbig {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 24px;
+    width: 504px; 
+    height: 367px;
+    border-radius: 30px;
     padding-left: 48px;
     padding-top: 48px;
     justify-content: space-between;
-}
+  } 
 .prod-info__big {
   display: flex;
   flex-wrap: wrap;
@@ -331,11 +444,9 @@ body {
   height: 367px;
   border-radius: 30px;
   padding-bottom: 85px;
-  padding-left: 48px;
   padding-top: 48px;
   justify-content: space-between;
-
-}
+  }
   .name__text {
    font-size: 48px;
   font-weight: 700;
@@ -348,8 +459,17 @@ body {
   font-weight: 400;
   line-height: 32px;
   text-align: left;
-  width: 497px;
+  width: 447px;
   height: 64px;
+  padding-bottom: 12px;
+    }
+    .content__big {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      text-align: left;
+      width: 497px;
+      height: 64px;
     }
 
   .button {
@@ -378,17 +498,11 @@ body {
       color: #000000;
     }
    .prod__title {
-    width: 400px;
-    height:78px;
-    gap: 72px;
-    opacity: 0px;
-    font-family: Montserrat;
+    
     font-size: 64px;
     font-weight: 700;
     line-height: 78.02px;
-    text-align: left;
      padding-bottom: 72px;
-     padding-left: 119px;
      padding-top: 96px;
      color: #FFFFFF;
     }
@@ -397,13 +511,13 @@ body {
       flex-wrap: wrap;
       flex-direction: column;
       row-gap: 24px;
-      width: 504px;
+      max-width: 504px;
       height: 308px;
       border-radius: 30px;
       padding-bottom: 144px;
       padding-left: 48px;
       padding-top: 48px;
-      justify-content: space-between; 
+      justify-content: space-evenly;
     }
 .games {
   display: flex;
@@ -411,13 +525,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 32px;
+  padding-bottom: 144px;
 }
-.top__text {
-  font-size: 16px;
- font-weight: 400;
-   line-height: 32px;
-   text-align: left;
-}
+
  @import "tabler";
 @import "mobile";
  
