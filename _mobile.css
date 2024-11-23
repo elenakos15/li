@@ -159,25 +159,12 @@
     font-size: 40px;
     padding-top: 48px;
     padding-bottom: 48px;
-  }
-  .games-big {
-    display: flex;
-    flex-direction: column;
-    row-gap: 24px;
-    border: 1px solid #ffffff;
-    box-sizing: border-box;
-    background: #ffffff;
     width: 343px;
-    height: 558.63px;
-    border-radius: 30px;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-    align-items: center;
   }
   .game-big {
     display: flex;
     flex-direction: column-reverse;
-    row-gap: 14px;
+    row-gap: 1px;
     border: 1px solid #ffffff;
     box-sizing: border-box;
     background: #ffffff;
@@ -223,7 +210,7 @@
     border-radius: 27.22px;
     padding-bottom: 32px;
     padding-left: 30px;
-    gap: 14px;
+    gap: 16px;
   }
   .prod__img {
     width: 343px;
@@ -237,6 +224,7 @@
     line-height: 29.01px;
     text-align: left;
     width: 284.93px;
+    height: 77px;
   }
   .content {
     font-family: Montserrat;
@@ -246,6 +234,7 @@
     text-align: left;
     width: 280px;
     height: 40px;
+    padding-bottom: 16px;
   }
   .content__big {
     font-size: 16px;
@@ -257,7 +246,6 @@
   }
   .product1 {
     width: 343px;
-    height: 567.63px;
     border-radius: 30px;
   }
   .prod-info__medium {
@@ -282,17 +270,38 @@
     border-radius: 30px;
     justify-content: flex-start;
     align-content: flex-start;
+    padding-bottom: 16px;
   }
   .prod-info__superbig {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    row-gap: 24px;
+    row-gap: 16px;
     width: 285px;
-    height: 342px;
+    height: 280px;
     border-radius: 30px;
     padding-left: 29px;
     justify-content: space-between;
+  }
+  .buton {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 28px;
+    gap: 10px;
+    width: 285px;
+    height: 55px;
+    background: #202027;
+    color: #efe9e9;
+    border: 1px solid #202027;
+    border-radius: 60px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: center;
   }
   .button {
     box-sizing: border-box;
@@ -309,9 +318,9 @@
     border: 1px solid #202027;
     border-radius: 60px;
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 600;
-    line-height: 34.01px;
+    line-height: 23px;
     text-align: center;
     flex: none;
   }
@@ -357,7 +366,7 @@
     align-content: center;
     flex-direction: column;
   }
-  .top-text {
+  .top_text {
     font-size: 16px;
     font-weight: 400;
     line-height: 19.5px;
