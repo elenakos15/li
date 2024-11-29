@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<div lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,22 +16,40 @@
 
   <div class="top-header">
     <div class="header center">
-      <a class="logo" href="index.html"><img class="bac" /></a>
+     <img class="bac" />
       <div class="head__text">
         <h1 class="text">Добро пожаловать<br>на мой сайт мини-игр</h1>
         <h2 class="top__text">
           Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай
           <strong>«Поехали!»</strong> и <strong>приступай. </strong>
         </h2>
-
-        <input type="button" class="buton" value="Поехали" />
+        <a href="#about-games"><input type="button" class="buton" value="Поехали" /></a>
       </div>
-    </div>
+      <div class="pol__geims">
+      <div class="header__pol center">
+      <p class="pol__content"></p>
+      <p class="tx1">Викторина</p>
+      <img src="img/Star.svg" alt="звезда" class="star1">
+      <p class="tx2">Угадай число</p>
+      <img src="img/Star.svg" alt="звезда" class="star1">
+      <p class="tx3">Переверни текст</p>
+      <img src="img/Star.svg" alt="звезда" class="star1">
+      <p class="tx4">Простая арифметика</p>
+      <img src="img/Star.svg" alt="звезда" class="star1">
+      <p class="tx5">Камень, ножницы, бумага</p>
+      <img src="img/Star.svg" alt="звезда" class="star1">
+      <p class="tx6">Генератор случайных цветов</p>
+      <img src="img/Star.svg" alt="звезда" class="star1">
   </div>
+</div>   
+</div>
+
+</div>
+
   <body>
     <main class="main">
       <div class="product-box">
-        <div class="product-content center">
+        <div class="product-content center" id="about-games">
           <h2 class="product__title">Об играх</h2>
           <h3 class="product__subtitle">
             В моей коллекции представлено 6 игр на разные темы.<br />
@@ -42,8 +60,8 @@
             
             <div class="card-wrapper">
               <fieldset class="prod prod_small">
-                <a class="product1" href="#">
-                  <img src="img/card1.svg" alt="Викторина" class="product__img"
+                <a class="product1" href="#guess the number">
+                  <img src="img/Обложка карточки@2x (1).png" alt="угадай" class="product__img"
                 /></a>
                 <div class="product-info">
                   <p class="product__name" id="product__name">Игра №1</p>
@@ -51,7 +69,7 @@
                 </div>
               </fieldset>
               <fieldset class="prod prod_big">
-                <a class="product4" href="#">
+                <a class="product4" href="#stone scissors">
                   <img src="img/Card1.png" alt="КНБ" class="product__img" />
                 </a>
                 <div class="product-info">
@@ -67,8 +85,8 @@
 
             <div class="card-wrapper">
               <fieldset class="prod prod__medium">
-                <a class="prod2" href="#">
-                  <img src="img/card2.svg" alt="Викторина" class="product__img" />
+                <a class="prod2" href="#simple arithmetic">
+                  <img src="img/card2.svg" alt="арифметика" class="product__img" />
                 </a>
                 <div class="product-info">
                   <p class="product__name">Игра №2</p>
@@ -77,19 +95,19 @@
               </fieldset>
 
               <fieldset class="prod prod__medium">
-                <a class="product5" href="#">
+                <a class="product5" href="#simple quiz">
                   <img src="img/card5.svg" alt="Првик" class="product__img" />
                 </a>
                 <div class="product-info">
                   <p class="product__name">Игра №5</p>
-                  <p class="product__text">Простая викторина</p>
+                  <p class="product__text">Простая <br>викторина</p>
                 </div>
               </fieldset>
             </div>
 
             <div class="card-wrapper">
               <fieldset class="prod prod_small">
-                <a class="product1" href="#">
+                <a class="product1" href="#Flip the text">
                   <img src="img/card3.svg" alt="перевертыш" class="product__img" />
                 </a>
                 <div class="product-info">
@@ -99,7 +117,7 @@
               </fieldset>
 
               <fieldset class="prod prod_big">
-                <a class="product4" href="#">
+                <a class="product4" href="#random colors">
                   <img src="img/card6.svg" alt="ГСЦ" class="product__img"
                 /></a>
                 <div class="product-info">
@@ -113,96 +131,114 @@
               </fieldset>
             </div>
           </div>
-       
-     
+       </div>
+      </div>
+      <div class="fon">
+<div class="center">
 
       <h2 class="prod__title">Мини-игры</h2>
-      <div class="games center">
-      <fieldset class="games-big">
+  <div class="games">
+      
+    <fieldset class="game-big">
+     
         <div class="prod-info">
           <p class="name__text">Угадай число</p>
           <p class="content">Попробуй угадать случайное число от 1 до 100.</p>
-         
-          <input type="button" class="button" value="Играть" id="playButton"/>
+           <input type="button" class="button" value="Играть" id="playButton"/>
          </div>
-
-        <a class="product1" href="#">
-          <img src="img/card1.svg" alt="Викторина" class="prod__img"
+         <a class="product1" href="#">
+          <img src="img/Обложка карточки@2x (1).png" alt="угадай число" class="prod__img" id="guess the number"
         /></a>
-       
       </fieldset>
-      
-           
-        <fieldset class="games-big">
-          <a class="prod2" href="#">
-            <img src="img/card2.svg" alt="арифметика" class="prod__img" />
+     
+       <fieldset class="games-big">
+         <a class="prod2" href="#">
+          <img src="img/Обложка карточки2.png" alt="арифметика" class="prod__img" id="simple arithmetic"/>
           </a>
           <div class="prod-info__medium">
            <p class="name__text">Простая арифметика</p>
            <p class="content">Попробуй решить простые арифметические задачи.</p>
-           <input type="button" class="button" value="Играть" />
+           <input type="button" class="button" id="decideButton" value="Играть" />
           </div>
-        </fieldset>
-
-      <fieldset class="games-big">
-        <div class="prod-info">
+         </fieldset>
+      <div class="mob-cart">
+      <fieldset class="game-big">
+           <div class="prod-info">
           <p class="name__text">Переверни текст</p>
           <p class="content">Попробуй ввести текст, который будет перевернут.</p>
-          <input type="button" class="button" value="Играть" />
+          <input type="button" class="button" id="perevButton" value="Играть" />
         </div>
         <a class="product1" href="#">
-          <img src="img/card3.svg" alt="Перевертыш" class="prod__img"
+          <img src="img/Обложка 3.png" alt="Перевертыш" class="prod__img" id="Flip the text"
         /></a>
-      </fieldset>
-
+        </fieldset>
+  </div>
+      <div class="mob-min">
       <fieldset class="games-big">
         <a class="prod2" href="#">
-          <img src="img/card5.svg" alt="Викторина" class="prod__img" />
+          <img src="img/Обложка 4.png" alt="Викторина" class="prod__img" id="simple quiz" />
         </a>
         <div class="prod-info__medium">
          <p class="name__text">Викторина</p>
          <p class="content">Отвечай на вопросы викторины с вариантами ответов.</p>
-         <input type="button" class="button" value="Играть" />
+         <input type="button" class="button" id="victButton"  value="Играть" />
         </div>
-      </fieldset>
-
-      <fieldset class="games-big">
-        <div class="prod-info__big">
+       </fieldset>
+      </div>
+      
+       <div class="mob-big">
+      <fieldset class="game-big">
+       <div class="prod-info__big">
           <div class="knb">
-          <p class="name__text">Камень,<br>ножницы,<br>бумага</p>
+          <p class="name__text">Камень, <br>ножницы,<br> бумага</p>
         </div>
           <p class="content">Сыграй в популярную игру,<br> против компьютера.</p>
-          <input type="button" class="button" value="Играть" />
+          <input type="button" class="button" id="rockButton" value="Играть" />
         </div>
         <a class="product1" href="#">
-          <img src="img/Card1.png" alt="КНБ" class="prod__img"
+          <img src="img/Обложка карточки (4).png" alt="КНБ" class="prod__img" id="stone scissors"
         /></a>
-      </fieldset>
+           </fieldset>
+    </div>
 
+      <div class="mob-max">
       <fieldset class="games-big">
-        <a class="prod2" href="#">
-          <img src="img/card6.svg" alt="Генератор" class="prod__img" />
+       <a class="prod2" href="#">
+          <img src="img/обложка 6.png" alt="Генератор" class="prod__img" id="random colors"/>
         </a>
-        <div class="prod-info__big">
+        <div class="prod-info__superbig">
         <div class="knb">
-         <p class="name__text">Генератор<br>случайных<br>чисел</p>
+         <p class="name__text">Генератор<br>случайных<br>цветов</p>
          </div>
          <div class="knb">
-         <p class="content">Игра, в которой при клике на кнопку<br>фон страницы меняется на случайный.</p>
+         <p class="content__big">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
          </div>
-         <input type="button" class="button" value="Играть" />
+         <input type="button" class="button" id="colorButton"    value="Играть" />
         </div>
-        
       </fieldset>
+    </div>
+    
+    </div>
     </div>
   </div>
   </div>
+</div>
     </main>
 
     <footer class="footer">
       <p class="footer__title">Все права защищены.</p>
     </footer>
+   
+    <script src="ygadai.js"></script>
     
-    <script src="hw-4.js"></script>
+    <script src="decide.js"></script>
+    
+    <script src="perever.js"></script>
+    
+    <script src="vict.js"></script>
+    
+    <script src="rock.js"></script>
+    
+    <script src="random.js"></script>
   </body>
 </html>
